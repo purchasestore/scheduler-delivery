@@ -39,7 +39,7 @@
   <div class="form-group">
     <%= f.label :start_time, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :start_time, :class => 'form-control' %>
+      <%= datetime_local_field(:meeting, :start_time) %>
     </div>
     <%=f.error_span(:start_time) %>
   </div>
