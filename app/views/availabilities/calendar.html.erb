@@ -5,7 +5,7 @@
       <div>Indisponível</div>
     <% else %>
       <% availabilities.each do |availability| %>
-        <%= link_to t('.new', :default => t("helpers.links.new")),
+        <%= link_to t('.new', :default => t("New Meeting")),
                   new_meeting_path,
                   :class => 'btn btn-primary' %>
         <div><%= availability.localization %></div>

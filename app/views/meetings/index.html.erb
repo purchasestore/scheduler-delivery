@@ -1,16 +1,16 @@
 <%- model_class = Meeting -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h1><%=t '.title', :default => t(model_class.model_name.human.pluralize.titleize) %></h1>
 </div>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:localization) %></th>
-      <th><%= model_class.human_attribute_name(:phone) %></th>
-      <th><%= model_class.human_attribute_name(:start_time) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= t model_class.human_attribute_name(:id) %></th>
+      <th><%= t model_class.human_attribute_name(:name) %></th>
+      <th><%= t model_class.human_attribute_name(:localization) %></th>
+      <th><%= t model_class.human_attribute_name(:phone) %></th>
+      <th><%= t model_class.human_attribute_name(:start_time) %></th>
+      <th><%= t model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>

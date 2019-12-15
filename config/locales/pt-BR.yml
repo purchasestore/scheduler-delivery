@@ -1,5 +1,20 @@
 ---
 pt-BR:
+  name: Nome
+  Name: Nome
+  created_at: Data de criação
+  Created at: Data de criação
+  phone: Celular
+  Phone: Celular
+  localization: Local de entrega
+  Localization: Local de entrega
+  start_time: Horário de entrega
+  Start time: Horário de entrega
+  Meetings: Agendamentos
+  Meeting: Agendamento
+  meeting: Agendamento
+  New Meeting: Novo Agendamento
+  Criar Meeting: Criar Agendamento
   activerecord:
     errors:
       messages:
@@ -221,3 +236,25 @@ pt-BR:
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
+  simple_calendar:
+    previous: "Anterior"
+    next: "Próximo"
+  helpers:
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Criar %{model}
+      submit: Salvar %{model}
+      update: Atualizar %{model}
+    links:
+      new: Novo
+      edit: Editar
+      destroy: Deletar
+      cancel: Cancelar
+      back: Voltar
+      submit: Salvar %{model}
+      confirm: Você tem certeza?
+    titles:
+      new: Novo %{model}
+    actions: Ações
+  
