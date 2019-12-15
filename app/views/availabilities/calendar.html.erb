@@ -8,7 +8,7 @@
         <%= link_to t('.new', :default => t("helpers.links.new")),
                   new_meeting_path,
                   :class => 'btn btn-primary' %>
-        <h1><%= availability.localization %></h1>
+        <div><%= availability.localization %></div>
         <div>Das <%= availability.start_time.strftime("%H:%M") %> às <%= availability.end_time.strftime("%H:%M") %></div>
       <% end %>
     <% end %>
