@@ -25,9 +25,11 @@ class MeetingsController < ApplicationController
   # POST /meetings.json
   def create
     @meeting = Meeting.new(meeting_params)
+    @availability = Availability.where("start_time <= ?", @meeting[:start_time])
+                                .where("end_time >= ?", @meeting[:start_time])
 
     respond_to do |format|
-      if @meeting.save
+      if @meeting.save && @availability.present?
         format.html { redirect_to calendar_path, notice: 'Meeting was successfully created.' }
         format.json { render :show, status: :created, location: @meeting }
       else
@@ -40,9 +42,11 @@ class MeetingsController < ApplicationController
   # PATCH/PUT /meetings/1
   # PATCH/PUT /meetings/1.json
   def update
+    @availability = Availability.where("start_time <= ?", @meeting[:start_time])
+                                .where("end_time >= ?", @meeting[:start_time])
     respond_to do |format|
-      if @meeting.update(meeting_params)
-        format.html { redirect_to @meeting, notice: 'Meeting was successfully updated.' }
+      if @meeting.update(meeting_params) && @availability.present?
+        format.html { redirect_to calendar_path, notice: 'Meeting was successfully updated.' }
         format.json { render :show, status: :ok, location: @meeting }
       else
         format.html { render :edit }
