@@ -18,21 +18,21 @@
   <div class="form-group">
     <%= f.label :localization, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :localization, :class => 'form-control' %>
+      <%= f.text_field :localization, :class => 'form-control', :required => true %>
     </div>
     <%=f.error_span(:localization) %>
   </div>
   <div class="form-group">
     <%= f.label :start_time, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= datetime_local_field(:availability, :start_time) %>
+      <%= datetime_local_field(:availability, :start_time, :required => true) %>
     </div>
     <%=f.error_span(:start_time) %>
   </div>
   <div class="form-group">
     <%= f.label :end_time, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= datetime_local_field(:availability, :end_time) %>
+      <%= datetime_local_field(:availability, :end_time, :required => true) %>
     </div>
     <%=f.error_span(:end_time) %>
   </div>

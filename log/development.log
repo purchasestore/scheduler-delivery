@@ -8752,3 +8752,727 @@ Completed 200 OK in 108ms (Views: 95.9ms | ActiveRecord: 4.9ms | Allocations: 10
 
 Started GET "/manifest.json" for ::1 at 2019-12-15 18:54:49 -0300
 Started GET "/serviceworker.js" for ::1 at 2019-12-15 18:54:51 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 19:16:51 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 2.6ms | Allocations: 1487)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 9943)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:16:52 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:16:55 -0300
+Started GET "/" for ::1 at 2019-12-15 19:30:03 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.5ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.1ms | Allocations: 6924)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 25.4ms | Allocations: 12530)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 31.1ms | ActiveRecord: 5.7ms | Allocations: 21808)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:30:04 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:30:06 -0300
+Started GET "/admin" for ::1 at 2019-12-15 19:30:06 -0300
+Processing by SchedulerController#admin as HTML
+  Rendering scheduler/admin.html.erb within layouts/application
+  Rendered scheduler/admin.html.erb within layouts/application (Duration: 0.6ms | Allocations: 188)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 8827)
+
+
+Started GET "/admin" for ::1 at 2019-12-15 19:30:07 -0300
+Processing by SchedulerController#admin as HTML
+  Rendering scheduler/admin.html.erb within layouts/application
+  Rendered scheduler/admin.html.erb within layouts/application (Duration: 0.8ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 7935)
+
+
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:30:07 -0300
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:30:07 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:30:09 -0300
+Started GET "/availabilities" for ::1 at 2019-12-15 19:30:09 -0300
+Processing by AvailabilitiesController#index as HTML
+  Rendering availabilities/index.html.erb within layouts/application
+  [1m[36mAvailability Load (0.5ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/index.html.erb:17
+  Rendered availabilities/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2662)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.5ms | Allocations: 10653)
+
+
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:30:11 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 2.7ms | Allocations: 1406)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2348)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3124)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+
+  <% if @availability.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @availability.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :localization, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :localization, :class => 'form-control', :required: true %>
+    </div>
+    <%=f.error_span(:localization) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :start_time) %>
+    </div>
+    <%=f.error_span(:start_time) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :end_time) %>
+    </div>
+    <%=f.error_span(:end_time) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                availabilities_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+2:    
+3:      <% if @availability.errors.any? %>
+4:        <div id="error_expl" class="panel panel-danger">
+5:          <div class="panel-heading">
+6:            <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+7:          </div>
+8:          <div class="panel-body">
+9:            <ul>
+10:            <% @availability.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:            </ul>
+14:          </div>
+15:        </div>
+16:      <% end %>
+17:    
+18:      <div class="form-group">
+19:        <%= f.label :localization, :class => 'control-label col-lg-2' %>
+20:        <div class="col-lg-10">
+21:          <%= f.text_field :localization, :class => 'form-control', :required: true %>
+22:        </div>
+23:        <%=f.error_span(:localization) %>
+24:      </div>
+25:      <div class="form-group">
+26:        <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+27:        <div class="col-lg-10">
+28:          <%= datetime_local_field(:availability, :start_time) %>
+29:        </div>
+30:        <%=f.error_span(:start_time) %>
+31:      </div>
+32:      <div class="form-group">
+33:        <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+34:        <div class="col-lg-10">
+35:          <%= datetime_local_field(:availability, :end_time) %>
+36:        </div>
+37:        <%=f.error_span(:end_time) %>
+38:      </div>
+39:    
+40:      <div class="form-group">
+41:        <div class="col-lg-offset-2 col-lg-10">
+42:          <%= f.submit nil, :class => 'btn btn-primary' %>
+43:          <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+44:                    availabilities_path, :class => 'btn btn-default' %>
+45:        </div>
+46:      </div>
+47:    
+48:    <% end %>
+  
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/new.html.erb:5
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:30:12 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 2.2ms | Allocations: 1395)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2064)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+
+  <% if @availability.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @availability.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :localization, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :localization, :class => 'form-control', :required: true %>
+    </div>
+    <%=f.error_span(:localization) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :start_time) %>
+    </div>
+    <%=f.error_span(:start_time) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :end_time) %>
+    </div>
+    <%=f.error_span(:end_time) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                availabilities_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+2:    
+3:      <% if @availability.errors.any? %>
+4:        <div id="error_expl" class="panel panel-danger">
+5:          <div class="panel-heading">
+6:            <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+7:          </div>
+8:          <div class="panel-body">
+9:            <ul>
+10:            <% @availability.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:            </ul>
+14:          </div>
+15:        </div>
+16:      <% end %>
+17:    
+18:      <div class="form-group">
+19:        <%= f.label :localization, :class => 'control-label col-lg-2' %>
+20:        <div class="col-lg-10">
+21:          <%= f.text_field :localization, :class => 'form-control', :required: true %>
+22:        </div>
+23:        <%=f.error_span(:localization) %>
+24:      </div>
+25:      <div class="form-group">
+26:        <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+27:        <div class="col-lg-10">
+28:          <%= datetime_local_field(:availability, :start_time) %>
+29:        </div>
+30:        <%=f.error_span(:start_time) %>
+31:      </div>
+32:      <div class="form-group">
+33:        <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+34:        <div class="col-lg-10">
+35:          <%= datetime_local_field(:availability, :end_time) %>
+36:        </div>
+37:        <%=f.error_span(:end_time) %>
+38:      </div>
+39:    
+40:      <div class="form-group">
+41:        <div class="col-lg-offset-2 col-lg-10">
+42:          <%= f.submit nil, :class => 'btn btn-primary' %>
+43:          <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+44:                    availabilities_path, :class => 'btn btn-default' %>
+45:        </div>
+46:      </div>
+47:    
+48:    <% end %>
+  
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/new.html.erb:5
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:30:14 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 1.2ms | Allocations: 1392)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2061)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2699)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+
+  <% if @availability.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @availability.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :localization, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :localization, :class => 'form-control', :required: true %>
+    </div>
+    <%=f.error_span(:localization) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :start_time) %>
+    </div>
+    <%=f.error_span(:start_time) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :end_time) %>
+    </div>
+    <%=f.error_span(:end_time) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                availabilities_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+2:    
+3:      <% if @availability.errors.any? %>
+4:        <div id="error_expl" class="panel panel-danger">
+5:          <div class="panel-heading">
+6:            <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+7:          </div>
+8:          <div class="panel-body">
+9:            <ul>
+10:            <% @availability.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:            </ul>
+14:          </div>
+15:        </div>
+16:      <% end %>
+17:    
+18:      <div class="form-group">
+19:        <%= f.label :localization, :class => 'control-label col-lg-2' %>
+20:        <div class="col-lg-10">
+21:          <%= f.text_field :localization, :class => 'form-control', :required: true %>
+22:        </div>
+23:        <%=f.error_span(:localization) %>
+24:      </div>
+25:      <div class="form-group">
+26:        <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+27:        <div class="col-lg-10">
+28:          <%= datetime_local_field(:availability, :start_time) %>
+29:        </div>
+30:        <%=f.error_span(:start_time) %>
+31:      </div>
+32:      <div class="form-group">
+33:        <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+34:        <div class="col-lg-10">
+35:          <%= datetime_local_field(:availability, :end_time) %>
+36:        </div>
+37:        <%=f.error_span(:end_time) %>
+38:      </div>
+39:    
+40:      <div class="form-group">
+41:        <div class="col-lg-offset-2 col-lg-10">
+42:          <%= f.submit nil, :class => 'btn btn-primary' %>
+43:          <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+44:                    availabilities_path, :class => 'btn btn-default' %>
+45:        </div>
+46:      </div>
+47:    
+48:    <% end %>
+  
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/_form.html.erb:21: syntax error, unexpected ':', expecting =>
+app/views/availabilities/new.html.erb:5
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:30:28 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 3.1ms | Allocations: 1607)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2546)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 11469)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:30:29 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:30:31 -0300
+Started POST "/availabilities" for ::1 at 2019-12-15 19:30:43 -0300
+Processing by AvailabilitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"4SFfm2Wm45fPF/arbWAnbcsz393rIY7RuXe/kaBVLr/i9YeMov0sN0niSoWrnaRdH4l4oaxCpLlpz8bQP56/NQ==", "availability"=>{"localization"=>"ee", "start_time"=>"", "end_time"=>""}, "commit"=>"Criar Availability"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+  [1m[36mAvailability Create (0.9ms)[0m  [1m[32mINSERT INTO "availabilities" ("localization", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["localization", "ee"], ["created_at", "2019-12-15 22:30:43.757152"], ["updated_at", "2019-12-15 22:30:43.757152"]]
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/availabilities/3
+Completed 302 Found in 13ms (ActiveRecord: 2.3ms | Allocations: 2899)
+
+
+Started GET "/availabilities/3" for ::1 at 2019-12-15 19:30:43 -0300
+Processing by AvailabilitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:74:in `set_availability'
+  Rendering availabilities/show.html.erb within layouts/application
+  Rendered availabilities/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.5ms | Allocations: 10705)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:30:44 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:30:46 -0300
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:30:46 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:30:48 -0300
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:30:49 -0300
+Processing by AvailabilitiesController#new as */*
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 2.0ms | Allocations: 1406)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2385)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3207)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+
+  <% if @availability.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @availability.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :localization, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :localization, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:localization) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :start_time), :required => true  %>
+    </div>
+    <%=f.error_span(:start_time) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :end_time) %>
+    </div>
+    <%=f.error_span(:end_time) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                availabilities_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+2:    
+3:      <% if @availability.errors.any? %>
+4:        <div id="error_expl" class="panel panel-danger">
+5:          <div class="panel-heading">
+6:            <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+7:          </div>
+8:          <div class="panel-body">
+9:            <ul>
+10:            <% @availability.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:            </ul>
+14:          </div>
+15:        </div>
+16:      <% end %>
+17:    
+18:      <div class="form-group">
+19:        <%= f.label :localization, :class => 'control-label col-lg-2' %>
+20:        <div class="col-lg-10">
+21:          <%= f.text_field :localization, :class => 'form-control', :required => true %>
+22:        </div>
+23:        <%=f.error_span(:localization) %>
+24:      </div>
+25:      <div class="form-group">
+26:        <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+27:        <div class="col-lg-10">
+28:          <%= datetime_local_field(:availability, :start_time), :required => true  %>
+29:        </div>
+30:        <%=f.error_span(:start_time) %>
+31:      </div>
+32:      <div class="form-group">
+33:        <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+34:        <div class="col-lg-10">
+35:          <%= datetime_local_field(:availability, :end_time) %>
+36:        </div>
+37:        <%=f.error_span(:end_time) %>
+38:      </div>
+39:    
+40:      <div class="form-group">
+41:        <div class="col-lg-offset-2 col-lg-10">
+42:          <%= f.submit nil, :class => 'btn btn-primary' %>
+43:          <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+44:                    availabilities_path, :class => 'btn btn-default' %>
+45:        </div>
+46:      </div>
+47:    
+48:    <% end %>
+  
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/availabilities/new.html.erb:5
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:31:31 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 1.2ms | Allocations: 1406)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2348)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3942)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+
+  <% if @availability.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @availability.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :localization, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :localization, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:localization) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :start_time) :required => true %>
+    </div>
+    <%=f.error_span(:start_time) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:availability, :end_time) %>
+    </div>
+    <%=f.error_span(:end_time) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                availabilities_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_for @availability, :html => { :class => "form-horizontal availability" } do |f| %>
+2:    
+3:      <% if @availability.errors.any? %>
+4:        <div id="error_expl" class="panel panel-danger">
+5:          <div class="panel-heading">
+6:            <h3 class="panel-title"><%= pluralize(@availability.errors.count, "error") %> prohibited this availability from being saved:</h3>
+7:          </div>
+8:          <div class="panel-body">
+9:            <ul>
+10:            <% @availability.errors.full_messages.each do |msg| %>
+11:              <li><%= msg %></li>
+12:            <% end %>
+13:            </ul>
+14:          </div>
+15:        </div>
+16:      <% end %>
+17:    
+18:      <div class="form-group">
+19:        <%= f.label :localization, :class => 'control-label col-lg-2' %>
+20:        <div class="col-lg-10">
+21:          <%= f.text_field :localization, :class => 'form-control', :required => true %>
+22:        </div>
+23:        <%=f.error_span(:localization) %>
+24:      </div>
+25:      <div class="form-group">
+26:        <%= f.label :start_time, :class => 'control-label col-lg-2' %>
+27:        <div class="col-lg-10">
+28:          <%= datetime_local_field(:availability, :start_time) :required => true %>
+29:        </div>
+30:        <%=f.error_span(:start_time) %>
+31:      </div>
+32:      <div class="form-group">
+33:        <%= f.label :end_time, :class => 'control-label col-lg-2' %>
+34:        <div class="col-lg-10">
+35:          <%= datetime_local_field(:availability, :end_time) %>
+36:        </div>
+37:        <%=f.error_span(:end_time) %>
+38:      </div>
+39:    
+40:      <div class="form-group">
+41:        <div class="col-lg-offset-2 col-lg-10">
+42:          <%= f.submit nil, :class => 'btn btn-primary' %>
+43:          <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+44:                    availabilities_path, :class => 'btn btn-default' %>
+45:        </div>
+46:      </div>
+47:    
+48:    <% end %>
+  
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ':', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ':', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ':', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ':', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ':', expecting ')'
+app/views/availabilities/_form.html.erb:28: syntax error, unexpected ':', expecting ')'
+app/views/availabilities/new.html.erb:5
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:31:35 -0300
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:31:40 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 3.3ms | Allocations: 1606)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2545)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 11466)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:31:41 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:31:43 -0300
+Started GET "/availabilities/new" for ::1 at 2019-12-15 19:33:03 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 2.6ms | Allocations: 1606)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2544)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 11450)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:33:04 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:33:07 -0300
+Started GET "/availabilities" for ::1 at 2019-12-15 19:33:43 -0300
+Processing by AvailabilitiesController#index as HTML
+  Rendering availabilities/index.html.erb within layouts/application
+  [1m[36mAvailability Load (0.6ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/index.html.erb:17
+  Rendered availabilities/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 2879)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.6ms | Allocations: 11869)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:33:44 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:33:46 -0300
+Started GET "/" for ::1 at 2019-12-15 19:33:47 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.8ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.0ms | Allocations: 6478)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 14.6ms | Allocations: 7888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.8ms | Allocations: 15901)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 19:33:48 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 19:33:48 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 5.5ms | Allocations: 2028)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2988)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 11535)
+
+
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 19:33:50 -0300
