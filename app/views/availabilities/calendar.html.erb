@@ -2,7 +2,7 @@
   <div class="alert alert-success"><%= flash[:notice] %></div>
 <% end %>
 <%= month_calendar events: @availabilities do |date, availabilities| %>
-  <%= l(date) %>
+  <%= l(date) %><br>
   <% if date >= Date.today %>
     <% if availabilities.empty?%>
       <div>Indisponível</div>
