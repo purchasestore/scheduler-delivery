@@ -4,7 +4,7 @@
     <% meetings.each do |meeting| %>
       <tr>
         <td><%= meeting.name %></td>
-        <td><%= l(meeting.start_time) %></td>
+        <td><%= meeting.start_time.strftime("%H:%M") %></td>
         <td><%= meeting.localization %></td>
       </tr>
     <% end %>

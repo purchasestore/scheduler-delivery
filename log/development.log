@@ -3857,3 +3857,1445 @@ This autoloaded constant has been unloaded.
 
 Please, check the "Autoloading and Reloading Constants" guide for solutions.
  (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/" for ::1 at 2019-12-15 11:41:09 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchedulerController#show as HTML
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 676.4ms | Allocations: 94601)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 695.8ms | Allocations: 101504)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2226ms (Views: 2214.7ms | ActiveRecord: 1.9ms | Allocations: 227935)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 11:41:12 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 11:41:14 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 11:41:14 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 11:42:04 -0300
+Started GET "/" for ::1 at 2019-12-15 11:59:16 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SchedulerController#show as HTML
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.1ms | Allocations: 6062)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 7053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.2ms | Allocations: 14671)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 11:59:17 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 11:59:19 -0300
+Started GET "/meetings" for ::1 at 2019-12-15 12:00:58 -0300
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:18
+  Rendered meetings/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 6518)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.2ms | Allocations: 14856)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 12:00:59 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 12:01:01 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 12:01:40 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 22.9ms | Allocations: 7853)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 26.2ms | Allocations: 8814)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms | Allocations: 16470)
+
+
+Started POST "/meetings" for ::1 at 2019-12-15 12:02:05 -0300
+Processing by MeetingsController#create as HTML
+  Parameters: {"authenticity_token"=>"aYXuxacDDy+/oa0ou/lqDIku2Ka83hU99MwI0iBS6awWfmR0v5U3XR3WCuV8mLEXQfF+DjrStE+e7ZXFI+/q+w==", "meeting"=>{"name"=>"Joana", "localization"=>"No inferno", "phone"=>"51 955595959595", "start_time"=>"2019-12-18T14:00"}, "commit"=>"Criar Meeting"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/meetings_controller.rb:30:in `block in create'
+  [1m[36mMeeting Create (1.2ms)[0m  [1m[32mINSERT INTO "meetings" ("name", "localization", "phone", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Joana"], ["localization", "No inferno"], ["phone", "51 955595959595"], ["start_time", "2019-12-18 14:00:00"], ["created_at", "2019-12-15 15:02:05.737952"], ["updated_at", "2019-12-15 15:02:05.737952"]]
+  ↳ app/controllers/meetings_controller.rb:30:in `block in create'
+  [1m[35m (32.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/meetings_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/meetings/4
+Completed 302 Found in 54ms (ActiveRecord: 33.5ms | Allocations: 4379)
+
+
+Started GET "/meetings/4" for ::1 at 2019-12-15 12:02:05 -0300
+Processing by MeetingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:67:in `set_meeting'
+  Rendering meetings/show.html.erb within layouts/application
+  Rendered meetings/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2436)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 17.1ms | ActiveRecord: 0.6ms | Allocations: 11467)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 12:02:06 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 12:02:08 -0300
+Started GET "/" for ::1 at 2019-12-15 12:02:08 -0300
+Processing by SchedulerController#show as HTML
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.1ms | Allocations: 6148)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 7155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.2ms | Allocations: 14761)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 12:02:09 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 12:02:11 -0300
+Started GET "/meetings" for ::1 at 2019-12-15 12:15:42 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:18
+  Rendered meetings/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 7031)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 1.1ms | Allocations: 14526)
+
+
+Started GET "/meetings/new" for ::1 at 2019-12-15 12:21:27 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 8.5ms | Allocations: 1844)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 10019)
+
+
+Started GET "/" for ::1 at 2019-12-15 12:42:10 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SchedulerController#show as HTML
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 17.3ms | Allocations: 6140)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 23.4ms | Allocations: 7168)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.3ms | Allocations: 14543)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAvailabilities (20191215154306)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "availabilities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "localization" varchar, "start_time" datetime, "end_time" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191215154306"]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/availabilities/calendar" for ::1 at 2019-12-15 13:09:37 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AvailabilitiesController#show as HTML
+  Parameters: {"id"=>"calendar"}
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:74:in `set_availability'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms | Allocations: 2391)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Availability with 'id'=calendar):
+  
+app/controllers/availabilities_controller.rb:74:in `set_availability'
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:09:40 -0300
+Started GET "/availability/calendar" for ::1 at 2019-12-15 13:10:03 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant AvailabilityController
+Did you mean?  AvailabilitiesController):
+  
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+serviceworker-rails (0.6.0) lib/serviceworker/middleware.rb:35:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:10:06 -0300
+Started GET "/calendar" for ::1 at 2019-12-15 13:11:03 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant AvailabilityController
+Did you mean?  AvailabilitiesController):
+  
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+serviceworker-rails (0.6.0) lib/serviceworker/middleware.rb:35:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/rails/info/routes?path=ca" for ::1 at 2019-12-15 13:11:06 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"ca"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2196)
+
+
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:11:06 -0300
+Started GET "/rails/info/routes?path=calend" for ::1 at 2019-12-15 13:11:07 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"calend"}
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 989)
+
+
+Started GET "/calendar" for ::1 at 2019-12-15 13:11:21 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.5ms | Allocations: 5556)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 24.9ms | Allocations: 7286)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 167ms (Views: 146.4ms | ActiveRecord: 0.6ms | Allocations: 38374)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:11:22 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:11:24 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/" for ::1 at 2019-12-15 13:11:51 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.7ms | Allocations: 5104)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 10.9ms | Allocations: 6678)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.5ms | Allocations: 15082)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:11:52 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:11:54 -0300
+Started GET "/availability" for ::1 at 2019-12-15 13:14:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/availability"):
+  
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:14:08 -0300
+Started GET "/availabilites" for ::1 at 2019-12-15 13:14:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/availabilites"):
+  
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:14:11 -0300
+Started GET "/availabilities" for ::1 at 2019-12-15 13:14:14 -0300
+Processing by AvailabilitiesController#index as HTML
+  Rendering availabilities/index.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/index.html.erb:16
+  Rendered availabilities/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.2ms | Allocations: 8834)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:14:15 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:14:17 -0300
+Started GET "/" for ::1 at 2019-12-15 13:17:33 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.2ms | Allocations: 5111)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 9.2ms | Allocations: 6316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms | Allocations: 15239)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:17:33 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:17:36 -0300
+Started GET "/availabilities/new" for ::1 at 2019-12-15 13:17:38 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 16.1ms | Allocations: 10680)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 17.2ms | Allocations: 11042)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 30.0ms | ActiveRecord: 0.8ms | Allocations: 22728)
+
+
+Started POST "/availabilities" for ::1 at 2019-12-15 13:18:03 -0300
+Processing by AvailabilitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"UAXkE6ImIcUnrt+Xxtvm6ok8RrXxDJY4SL7oaCK1AJ/eZh2kL9rbZcDZRSOIGpxAdVzbMrwjYU+HHIfavf8AZw==", "availability"=>{"localization"=>"Estação", "start_time(3i)"=>"16", "start_time(2i)"=>"12", "start_time(1i)"=>"2019", "start_time(4i)"=>"10", "start_time(5i)"=>"00", "end_time(3i)"=>"16", "end_time(2i)"=>"12", "end_time(1i)"=>"2019", "end_time(4i)"=>"16", "end_time(5i)"=>"00"}, "commit"=>"Criar Availability"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+  [1m[36mAvailability Create (1.3ms)[0m  [1m[32mINSERT INTO "availabilities" ("localization", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["localization", "Estação"], ["start_time", "2019-12-16 10:00:00"], ["end_time", "2019-12-16 16:00:00"], ["created_at", "2019-12-15 16:18:03.336193"], ["updated_at", "2019-12-15 16:18:03.336193"]]
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/availabilities/1
+Completed 302 Found in 26ms (ActiveRecord: 12.2ms | Allocations: 4434)
+
+
+Started GET "/availabilities/1" for ::1 at 2019-12-15 13:18:03 -0300
+Processing by AvailabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:74:in `set_availability'
+  Rendering availabilities/show.html.erb within layouts/application
+  Rendered availabilities/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.3ms | Allocations: 8915)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:18:03 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:18:06 -0300
+Started GET "/" for ::1 at 2019-12-15 13:18:06 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.4ms | Allocations: 4679)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms | Allocations: 13368)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:18:07 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:18:09 -0300
+Started GET "/" for ::1 at 2019-12-15 13:19:05 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.4ms | Allocations: 6217)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 13.3ms | Allocations: 7471)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.1ms | Allocations: 16404)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:19:05 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:19:08 -0300
+Started GET "/" for ::1 at 2019-12-15 13:22:47 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.9ms | Allocations: 6224)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 15.9ms | Allocations: 7486)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.1ms | Allocations: 16407)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:22:48 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:22:50 -0300
+Started GET "/" for ::1 at 2019-12-15 13:22:59 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.8ms | Allocations: 6226)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 11.3ms | Allocations: 7486)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 16414)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:23:00 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:23:02 -0300
+Started GET "/availabilities" for ::1 at 2019-12-15 13:23:03 -0300
+Processing by AvailabilitiesController#index as HTML
+  Rendering availabilities/index.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/index.html.erb:16
+  Rendered availabilities/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1086)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.2ms | Allocations: 8982)
+
+
+Started GET "/" for ::1 at 2019-12-15 13:30:17 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.1ms | Allocations: 6228)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 15.3ms | Allocations: 7505)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms | Allocations: 16427)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:30:17 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:30:19 -0300
+Started GET "/scheduler/show" for ::1 at 2019-12-15 13:30:29 -0300
+Processing by SchedulerController#show as HTML
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.2ms | Allocations: 5877)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 21.9ms | Allocations: 12104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 1.1ms | Allocations: 20849)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:30:30 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:30:32 -0300
+Started GET "/schedulers/new" for ::1 at 2019-12-15 13:36:10 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/schedulers/new"):
+  
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:36:13 -0300
+Started GET "/scheduler/new" for ::1 at 2019-12-15 13:36:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/scheduler/new"):
+  
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:36:18 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 13:36:25 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 5.5ms | Allocations: 2395)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 3355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 11867)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:36:25 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:36:27 -0300
+Started GET "/meetings" for ::1 at 2019-12-15 13:37:27 -0300
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:18
+  Rendered meetings/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 7503)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.2ms | Allocations: 15308)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:37:28 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:37:30 -0300
+Started GET "/rails/info/routes" for ::1 at 2019-12-15 13:40:38 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [38 times] (Duration: 12.2ms | Allocations: 5634)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.8ms | Allocations: 712)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 19.3ms | Allocations: 9607)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 11067)
+
+
+Started GET "/rails/info/routes" for ::1 at 2019-12-15 13:40:38 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [38 times] (Duration: 11.6ms | Allocations: 5381)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.6ms | Allocations: 125)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 17.8ms | Allocations: 8377)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 9020)
+
+
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:40:39 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:40:41 -0300
+Started GET "/rails/info/routes?path=caln" for ::1 at 2019-12-15 13:40:42 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"caln"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1892)
+
+
+Started GET "/rails/info/routes?path=calen" for ::1 at 2019-12-15 13:40:43 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"calen"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 970)
+
+
+Started GET "/meetings/new" for ::1 at 2019-12-15 13:41:03 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 4.0ms | Allocations: 1863)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2542)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 17.6ms | ActiveRecord: 1.6ms | Allocations: 16010)
+
+
+Started POST "/meetings" for ::1 at 2019-12-15 13:41:30 -0300
+Processing by MeetingsController#create as HTML
+  Parameters: {"authenticity_token"=>"PmFiVW5AYxv+dC1z5Ane1iyvmd3bfil/Fwkg+HLE0oJBmujkdtZbaVwDir4jaAXN5HA/dV1yiA19KL3vcXnR1Q==", "meeting"=>{"name"=>"Meninosa", "localization"=>"Potato valley", "phone"=>"51 59595959", "start_time"=>"2019-12-17T15:00"}, "commit"=>"Criar Meeting"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/meetings_controller.rb:30:in `block in create'
+  [1m[36mMeeting Create (0.8ms)[0m  [1m[32mINSERT INTO "meetings" ("name", "localization", "phone", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Meninosa"], ["localization", "Potato valley"], ["phone", "51 59595959"], ["start_time", "2019-12-17 15:00:00"], ["created_at", "2019-12-15 16:41:30.915706"], ["updated_at", "2019-12-15 16:41:30.915706"]]
+  ↳ app/controllers/meetings_controller.rb:30:in `block in create'
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/meetings_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/calendar
+Completed 302 Found in 27ms (ActiveRecord: 11.8ms | Allocations: 4081)
+
+
+Started GET "/calendar" for ::1 at 2019-12-15 13:41:30 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 13.0ms | Allocations: 6225)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 26.1ms | Allocations: 11186)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 1.5ms | Allocations: 19427)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:41:31 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:41:33 -0300
+Started GET "/" for ::1 at 2019-12-15 13:47:44 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 25.9ms | Allocations: 30375)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 30.2ms | Allocations: 31709)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.2ms | Allocations: 40570)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:47:44 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:47:47 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 13:47:59 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 5.1ms | Allocations: 2388)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3337)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 12166)
+
+
+Started GET "/meetings/new" for ::1 at 2019-12-15 13:48:32 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 3.8ms | Allocations: 1849)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2519)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 10201)
+
+
+Started GET "/" for ::1 at 2019-12-15 13:50:08 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 25.1ms | Allocations: 18625)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 28.2ms | Allocations: 19934)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.1ms | Allocations: 28777)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:50:08 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:50:10 -0300
+Started GET "/" for ::1 at 2019-12-15 13:50:21 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 13.8ms | Allocations: 18632)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 17.1ms | Allocations: 19944)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.1ms | Allocations: 28795)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:50:22 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:50:24 -0300
+Started GET "/" for ::1 at 2019-12-15 13:50:38 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 16.9ms | Allocations: 18624)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 19.6ms | Allocations: 19933)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.1ms | Allocations: 28785)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:50:39 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:50:41 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 13:51:04 -0300
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 6.3ms | Allocations: 2372)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 11777)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:51:05 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:51:07 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 13:51:08 -0300
+Processing by MeetingsController#new as */*
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 9.2ms | Allocations: 1842)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 10496)
+
+
+Started GET "/meetings/new?start_time=%2216/12/2019%22" for ::1 at 2019-12-15 13:51:40 -0300
+Processing by MeetingsController#new as HTML
+  Parameters: {"start_time"=>"\"16/12/2019\""}
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 6.7ms | Allocations: 1842)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 10197)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:51:41 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:51:42 -0300
+Started GET "/meetings/new?start_time=%2216/12/2019%22" for ::1 at 2019-12-15 13:51:51 -0300
+Processing by MeetingsController#new as */*
+  Parameters: {"start_time"=>"\"16/12/2019\""}
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 9.4ms | Allocations: 1842)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 10200)
+
+
+Started GET "/scheduler/show" for ::1 at 2019-12-15 13:52:50 -0300
+Processing by SchedulerController#show as HTML
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.2ms | Allocations: 5892)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 13.2ms | Allocations: 7225)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 15752)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 13:52:50 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 13:52:52 -0300
+Started GET "/" for ::1 at 2019-12-15 14:01:08 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 23.5ms | Allocations: 18624)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 30.1ms | Allocations: 19959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.3ms | Allocations: 28818)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:01:08 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:01:10 -0300
+Started GET "/" for ::1 at 2019-12-15 14:01:29 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.1ms | Allocations: 7206)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 14.0ms | Allocations: 8520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.2ms | Allocations: 17364)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:01:30 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:01:32 -0300
+Started GET "/" for ::1 at 2019-12-15 14:03:00 -0300
+Processing by AvailabilitiesController#calendar as */*
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.5ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.9ms | Allocations: 6764)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 16.0ms | Allocations: 7671)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.5ms | Allocations: 15369)
+
+
+Started GET "/" for ::1 at 2019-12-15 14:05:17 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 13.2ms | Allocations: 7226)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 16.7ms | Allocations: 8541)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.1ms | Allocations: 17386)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:05:18 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:05:20 -0300
+Started GET "/" for ::1 at 2019-12-15 14:07:13 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.9ms | Allocations: 7206)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 12.2ms | Allocations: 8521)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.1ms | Allocations: 17365)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:07:14 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:07:16 -0300
+Started GET "/" for ::1 at 2019-12-15 14:08:00 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 4.6ms | Allocations: 3114)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4448)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 6058)
+
+
+  
+ActionView::Template::Error (undefined method `insepct' for []:Array
+Did you mean?  inspect
+               insert
+               inject):
+    22:               <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(block) %>
+    23:                 <% capture_haml(day, sorted_events.fetch(day, []), &block) %>
+    24:               <% else %>
+    25:                 <% block.call day, sorted_events.fetch(day, []) %>
+    26:               <% end %>
+    27:             <% end %>
+    28:           <% end %>
+  
+app/views/availabilities/calendar.html.erb:3
+app/views/simple_calendar/_month_calendar.html.erb:25
+app/views/simple_calendar/_month_calendar.html.erb:21
+app/views/simple_calendar/_month_calendar.html.erb:20:in `each'
+app/views/simple_calendar/_month_calendar.html.erb:20
+app/views/simple_calendar/_month_calendar.html.erb:18:in `each'
+app/views/simple_calendar/_month_calendar.html.erb:18:in `each_slice'
+app/views/simple_calendar/_month_calendar.html.erb:18
+app/views/availabilities/calendar.html.erb:1
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:08:03 -0300
+Started GET "/" for ::1 at 2019-12-15 14:08:12 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.6ms | Allocations: 7411)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 16.1ms | Allocations: 8739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.1ms | Allocations: 17588)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:08:12 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:08:14 -0300
+Started GET "/" for ::1 at 2019-12-15 14:08:28 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.7ms | Allocations: 7574)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 16.8ms | Allocations: 8919)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.1ms | Allocations: 17758)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:08:29 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:08:31 -0300
+Started GET "/" for ::1 at 2019-12-15 14:08:37 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.0ms | Allocations: 7572)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 13.3ms | Allocations: 8920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.1ms | Allocations: 17774)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:08:38 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:08:40 -0300
+Started GET "/" for ::1 at 2019-12-15 14:08:51 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 13.2ms | Allocations: 7226)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 17.2ms | Allocations: 8539)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.1ms | Allocations: 17378)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:08:51 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:08:53 -0300
+Started GET "/" for ::1 at 2019-12-15 14:10:10 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.8ms | Allocations: 7247)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 12.8ms | Allocations: 8561)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.1ms | Allocations: 17409)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:10:11 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:10:13 -0300
+Started GET "/" for ::1 at 2019-12-15 14:10:19 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.8ms | Allocations: 7226)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 14.1ms | Allocations: 8542)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.1ms | Allocations: 17396)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:10:19 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:10:21 -0300
+Started GET "/availabilities/new" for ::1 at 2019-12-15 14:10:31 -0300
+Processing by AvailabilitiesController#new as HTML
+  Rendering availabilities/new.html.erb within layouts/application
+  Rendered availabilities/_form.html.erb (Duration: 9.1ms | Allocations: 5782)
+  Rendered availabilities/new.html.erb within layouts/application (Duration: 13.7ms | Allocations: 6145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 14057)
+
+
+Started GET "/" for ::1 at 2019-12-15 14:12:36 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.6ms | Allocations: 7017)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 17.4ms | Allocations: 8331)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.1ms | Allocations: 17181)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:12:37 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:12:39 -0300
+Started POST "/availabilities" for ::1 at 2019-12-15 14:12:55 -0300
+Processing by AvailabilitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"Jnk2B7S58eklUwP37prcBshEQYyiHqMhjsGYbexXtu+oGs+wOUULScIkmUOgW6asNCTcC+8xVFZBY/ffcx22Fw==", "availability"=>{"localization"=>"", "start_time(3i)"=>"14", "start_time(2i)"=>"12", "start_time(1i)"=>"2019", "start_time(4i)"=>"17", "start_time(5i)"=>"10", "end_time(3i)"=>"14", "end_time(2i)"=>"12", "end_time(1i)"=>"2019", "end_time(4i)"=>"17", "end_time(5i)"=>"10"}, "commit"=>"Criar Availability"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+  [1m[36mAvailability Create (0.4ms)[0m  [1m[32mINSERT INTO "availabilities" ("localization", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["localization", ""], ["start_time", "2019-12-14 17:10:00"], ["end_time", "2019-12-14 17:10:00"], ["created_at", "2019-12-15 17:12:55.847332"], ["updated_at", "2019-12-15 17:12:55.847332"]]
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/availabilities_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/availabilities/2
+Completed 302 Found in 23ms (ActiveRecord: 12.5ms | Allocations: 4409)
+
+
+Started GET "/availabilities/2" for ::1 at 2019-12-15 14:12:55 -0300
+Processing by AvailabilitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities" WHERE "availabilities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/availabilities_controller.rb:74:in `set_availability'
+  Rendering availabilities/show.html.erb within layouts/application
+  Rendered availabilities/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 8887)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:12:56 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:12:58 -0300
+Started GET "/" for ::1 at 2019-12-15 14:12:59 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.3ms | Allocations: 7174)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 14.4ms | Allocations: 8134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.1ms | Allocations: 15829)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:12:59 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:13:02 -0300
+Started GET "/" for ::1 at 2019-12-15 14:14:38 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.1ms | Allocations: 7020)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 13.5ms | Allocations: 8431)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.1ms | Allocations: 17265)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:14:39 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:14:41 -0300
+Started GET "/" for ::1 at 2019-12-15 14:15:09 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.5ms | Allocations: 7020)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 10.4ms | Allocations: 8425)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.1ms | Allocations: 17260)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:15:09 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:15:12 -0300
+Started GET "/" for ::1 at 2019-12-15 14:15:17 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 14.5ms | Allocations: 7020)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 18.6ms | Allocations: 8426)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.2ms | Allocations: 17265)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:15:18 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:15:20 -0300
+Started GET "/meetings/new" for ::1 at 2019-12-15 14:24:21 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 4.3ms | Allocations: 2372)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 11768)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:24:23 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:24:24 -0300
+Started GET "/availabilities" for ::1 at 2019-12-15 14:35:14 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AvailabilitiesController#index as HTML
+  Rendering availabilities/index.html.erb within layouts/application
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/index.html.erb:16
+  Rendered availabilities/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1285)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.3ms | Allocations: 9179)
+
+
+Started GET "/meetings/new?start_date=%2216/12/2019%22" for ::1 at 2019-12-15 14:37:30 -0300
+Processing by MeetingsController#new as HTML
+  Parameters: {"start_date"=>"\"16/12/2019\""}
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 3.3ms | Allocations: 1851)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2521)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 10193)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:37:30 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:37:33 -0300
+Started GET "/meetings/new?start_date=%2216/12/2019%22" for ::1 at 2019-12-15 14:37:36 -0300
+Processing by MeetingsController#new as */*
+  Parameters: {"start_date"=>"\"16/12/2019\""}
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 2.4ms | Allocations: 1842)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 10491)
+
+
+Started GET "/meetings/new?start_date=16/12/2019" for ::1 at 2019-12-15 14:40:26 -0300
+Processing by MeetingsController#new as HTML
+  Parameters: {"start_date"=>"16/12/2019"}
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 3.0ms | Allocations: 1842)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 10182)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:40:27 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:40:29 -0300
+Started GET "/" for ::1 at 2019-12-15 14:43:35 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.1ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.9ms | Allocations: 6571)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 13.1ms | Allocations: 7531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.1ms | Allocations: 15218)
+
+
+Started GET "/manifest.json" for ::1 at 2019-12-15 14:43:35 -0300
+Started GET "/serviceworker.js" for ::1 at 2019-12-15 14:43:38 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (263.2ms)[0m  [1m[35mCREATE DATABASE "scheduler_delivery_development" ENCODING = 'unicode'[0m
+  [1m[35m (234.3ms)[0m  [1m[35mCREATE DATABASE "scheduler_delivery_test" ENCODING = 'unicode'[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (23.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (22.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMeetings (20191214143953)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE TABLE "meetings" ("id" bigserial primary key, "name" character varying, "localization" character varying, "phone" character varying, "start_time" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191214143953"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAvailabilities (20191215154306)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "availabilities" ("id" bigserial primary key, "localization" character varying, "start_time" timestamp, "end_time" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191215154306"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-15 17:56:08.330753"], ["updated_at", "2019-12-15 17:56:08.330753"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
