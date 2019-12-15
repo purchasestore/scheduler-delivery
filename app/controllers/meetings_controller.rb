@@ -31,7 +31,7 @@ class MeetingsController < ApplicationController
     respond_to do |format|
       if @availability.present?
         @meeting.save
-        format.html { redirect_to calendar_path, notice: 'Meeting was successfully created.' }
+        format.html { redirect_to calendar_path, notice: 'Agendamento feito com sucesso.' }
         format.json { render :show, status: :created, location: @meeting }
       else
         format.html { render :new }
