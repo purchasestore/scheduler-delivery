@@ -29,7 +29,8 @@ class MeetingsController < ApplicationController
                                 .where("end_time >= ?", @meeting[:start_time])
 
     respond_to do |format|
-      if @meeting.save && @availability.present?
+      if @availability.present?
+        @meeting.save
         format.html { redirect_to calendar_path, notice: 'Meeting was successfully created.' }
         format.json { render :show, status: :created, location: @meeting }
       else
@@ -45,7 +46,8 @@ class MeetingsController < ApplicationController
     @availability = Availability.where("start_time <= ?", @meeting[:start_time])
                                 .where("end_time >= ?", @meeting[:start_time])
     respond_to do |format|
-      if @meeting.update(meeting_params) && @availability.present?
+      if @availability.present?
+        @meeting.update(meeting_params)
         format.html { redirect_to calendar_path, notice: 'Meeting was successfully updated.' }
         format.json { render :show, status: :ok, location: @meeting }
       else
