@@ -1,0 +1,74 @@
+<%= form_for @meeting, :html => { :class => "form-horizontal meeting", novalidate: true } do |f| %>
+
+  <% if @meeting.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@meeting.errors.count, "error") %> prohibited this meeting from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @meeting.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label t(:name), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :name, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label t(:localization), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :localization, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:localization) %>
+  </div>
+  <div class="form-group">
+    <%= f.label t(:phone), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :phone, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:phone) %>
+  </div>
+  <div class="form-group">
+    <%= f.label t(:start_time), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= datetime_local_field(:meeting, :start_time) %>
+    </div>
+    <%=f.error_span(:start_time) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:products), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_area(:meeting, :products) %>
+    </div>
+    <%=f.error_span(:products) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:total_price), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_field(:meeting, :total_price) %>
+    </div>
+    <%=f.error_span(:total_price) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:payment_type), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_field(:meeting, :payment_type) %>
+    </div>
+    <%=f.error_span(:payment_type) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+    </div>
+  </div>
+
+<% end %>

@@ -14,6 +14,9 @@ pt-BR:
   Meeting: Agendamento
   meeting: Agendamento
   New Meeting: Novo Agendamento
+  products: Produtos
+  total_price: Preço Total
+  payment_type: Tipo de pagamento
   Criar Meeting: Criar Agendamento
   activerecord:
     errors:
