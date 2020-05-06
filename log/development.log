@@ -11287,3 +11287,56 @@ Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 235
 
 
 Started GET "/serviceworker.js" for ::1 at 2020-05-06 19:49:52 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/" for ::1 at 2020-05-06 19:54:02 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AvailabilitiesController#calendar as HTML
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.4ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 78.5ms | Allocations: 93705)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 92.8ms | Allocations: 99936)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 833ms (Views: 821.9ms | ActiveRecord: 4.8ms | Allocations: 1659910)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-06 19:54:03 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-06 19:54:05 -0300

@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -28,6 +28,8 @@ gem "simple_calendar", "~> 2.0"
 gem "twitter-bootstrap-rails"
 gem "jquery-rails"
 gem 'rails-i18n', '~> 6.0.0'
+
+gem "actionview", ">= 6.0.2.2"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
