@@ -39,9 +39,37 @@
   <div class="form-group">
     <%= f.label t(:start_time), :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= datetime_local_field(:meeting, :start_time) %>
+      <%= datetime_local_field :meeting, :start_time, :class => 'form-control', :required => true %>
     </div>
     <%=f.error_span(:start_time) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:products), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_area :meeting, :products, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:products) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:total_price), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_field :meeting, :total_price, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:total_price) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:payment_type), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_field :meeting, :payment_type, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:payment_type) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:information), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= text_area :meeting, :information, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:information) %>
   </div>
 
   <div class="form-group">

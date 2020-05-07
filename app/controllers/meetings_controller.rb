@@ -48,7 +48,7 @@ class MeetingsController < ApplicationController
     respond_to do |format|
       if @availability.present?
         @meeting.update(meeting_params)
-        format.html { redirect_to calendar_path, notice: 'Meeting was successfully updated.' }
+        format.html { redirect_to calendar_path, notice: 'Agendamento Atualizado com sucesso.' }
         format.json { render :show, status: :ok, location: @meeting }
       else
         format.html { render :edit }
@@ -62,7 +62,7 @@ class MeetingsController < ApplicationController
   def destroy
     @meeting.destroy
     respond_to do |format|
-      format.html { redirect_to meetings_url, notice: 'Meeting was successfully destroyed.' }
+      format.html { redirect_to meetings_url, notice: 'Agendamento deletado com sucesso.' }
       format.json { head :no_content }
     end
   end
