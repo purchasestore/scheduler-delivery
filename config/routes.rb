@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   get 'scheduler/show', to: 'scheduler#show', as: 'show'
   get 'scheduler/show-delivers', to: 'scheduler#show_delivers', as: 'show_delivers'
   get 'calendar', to: 'availabilities#calendar', as: 'calendar'
-  get 'admin', to: 'scheduler#admin', as: 'admin'
   root to: 'availabilities#calendar'
 end

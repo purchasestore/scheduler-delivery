@@ -13378,3 +13378,213 @@ Completed 200 OK in 57ms (Views: 46.2ms | ActiveRecord: 3.0ms | Allocations: 308
 Started GET "/manifest.json" for ::1 at 2020-05-07 20:36:36 -0300
 Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:36:38 -0300
 Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:36:38 -0300
+Started GET "/users/sign_up" for ::1 at 2020-05-07 20:39:31 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 209)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1926)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 23894)
+
+
+Started GET "/" for ::1 at 2020-05-07 20:42:46 -0300
+Processing by AvailabilitiesController#calendar as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-05-07 20:42:46 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 136)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1119)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 22173)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:42:47 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:42:47 -0300
+Started GET "/" for ::1 at 2020-05-07 20:42:48 -0300
+Processing by AvailabilitiesController#calendar as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 364)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-05-07 20:42:48 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 136)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1109)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 22142)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:42:48 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:42:50 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:42:50 -0300
+Started POST "/users/sign_in" for ::1 at 2020-05-07 20:42:50 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"oqewPXb+/fRA6srxrWIZ4RIGQ53GIl9TQIiBQF9ici+j+PPWTzKZGuo/lWkQjDdVW6P8tfM/FWrRXDL5VTF/UQ==", "user"=>{"email"=>"matheus.puppe@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matheus.puppe@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 0.3ms | Allocations: 8884)
+
+
+Started GET "/" for ::1 at 2020-05-07 20:42:50 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 4.8ms | Allocations: 5435)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 14.3ms | Allocations: 10384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 27.2ms | ActiveRecord: 2.9ms | Allocations: 32995)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:42:51 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:42:53 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:42:53 -0300
+Started GET "/" for ::1 at 2020-05-07 20:45:08 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.5ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.5ms | Allocations: 5288)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 12.1ms | Allocations: 6680)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 488ms (ActiveRecord: 0.8ms | Allocations: 250589)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `navbar' for #<#<Class:0x00007f154a02c338>:0x00007f154a025830>
+Did you mean?  nav_bar):
+    13:   </head>
+    14: 
+    15:   <body>
+    16:     <%= navbar %>
+    17:     <% if notice %>
+    18:       <p class="alert alert-success"><%= notice %></p>
+    19:     <% end %>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:45:11 -0300
+Started GET "/" for ::1 at 2020-05-07 20:46:02 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.4ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.2ms | Allocations: 5300)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6690)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.1ms | Allocations: 32314)
+
+
+  
+ActionView::Template::Error (Missing partial availabilities/_navbar, application/_navbar with {:locale=>[:"pt-BR"], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/app/views"
+  * "/home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/devise-4.7.1/app/views"
+  * "/home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/twitter-bootstrap-rails-3.2.2/app/views"
+  * "/home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/simple_calendar-2.3.0/app/views"
+  * "/home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actiontext-6.0.2.2/app/views"
+  * "/home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionmailbox-6.0.2.2/app/views"
+):
+    13:   </head>
+    14: 
+    15:   <body>
+    16:     <%= render :partial => 'navbar' %>
+    17:     <% if notice %>
+    18:       <p class="alert alert-success"><%= notice %></p>
+    19:     <% end %>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:46:04 -0300
+Started GET "/" for ::1 at 2020-05-07 20:46:54 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.6ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.4ms | Allocations: 5286)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 12.1ms | Allocations: 6675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 85)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.9ms | Allocations: 30658)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:46:54 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:46:56 -0300
+Started GET "/" for ::1 at 2020-05-07 20:47:54 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.3ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.3ms | Allocations: 5288)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6676)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 119)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 0.6ms | Allocations: 30690)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:47:54 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:47:56 -0300
+Started GET "/" for ::1 at 2020-05-07 20:50:17 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.0ms | Allocations: 5289)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 10.0ms | Allocations: 6678)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 98)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.5ms | Allocations: 30676)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:50:17 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:50:19 -0300
+Started GET "/" for ::1 at 2020-05-07 20:51:28 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.2ms | Allocations: 5288)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 9.6ms | Allocations: 6674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 297)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.4ms | Allocations: 30859)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:51:29 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:51:31 -0300
+Started GET "/" for ::1 at 2020-05-07 20:52:21 -0300
+Processing by AvailabilitiesController#calendar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/calendar.html.erb within layouts/application
+  [1m[36mAvailability Load (0.2ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/calendar.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 4.4ms | Allocations: 5286)
+  Rendered availabilities/calendar.html.erb within layouts/application (Duration: 6.6ms | Allocations: 6674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 216)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.3ms | Allocations: 30779)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 20:52:21 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 20:52:23 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
