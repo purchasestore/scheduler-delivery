@@ -16,6 +16,7 @@ pt-BR:
   New Meeting: Novo Agendamento
   products: Produtos
   total_price: Preço Total
+  information: Informações
   payment_type: Tipo de pagamento
   Criar Meeting: Criar Agendamento
   activerecord:
