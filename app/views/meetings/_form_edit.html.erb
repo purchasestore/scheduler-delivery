@@ -28,6 +28,13 @@
       <%= f.text_field :localization, :class => 'form-control', :required => true %>
     </div>
     <%=f.error_span(:localization) %>
+  </div>  
+  <div class="form-group">
+    <%= f.label t(:district), :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :district, :class => 'form-control', :required => true %>
+    </div>
+    <%=f.error_span(:district) %>
   </div>
   <div class="form-group">
     <%= f.label t(:phone), :class => 'control-label col-lg-2' %>
