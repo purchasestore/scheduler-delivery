@@ -63,6 +63,7 @@ class AvailabilitiesController < ApplicationController
 
   def calendar
     @availabilities = Availability.all
+    @meetings = Meeting.all
     respond_to do |format|
       format.html
     end
