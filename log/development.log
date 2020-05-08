@@ -15992,3 +15992,339 @@ Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 0.8ms | Allocations: 307
 
 Started GET "/manifest.json" for ::1 at 2020-05-07 22:05:55 -0300
 Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:05:57 -0300
+Started DELETE "/users/sign_out" for ::1 at 2020-05-07 22:06:59 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8hfsntP+6aqDpbrMgeUckW5rgn952x1HvxplKVgFreBZvRUX6TY3ZEguGRNJBbcGj4MjfriARRqoCe5CvEAVTQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2199)
+
+
+Started GET "/" for ::1 at 2020-05-07 22:06:59 -0300
+Processing by SchedulerController#show as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:06:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 23643)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:06:59 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:07:01 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:07:01 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:09:34 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 24191)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:09:35 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:09:36 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:10:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 24189)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:10:22 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:10:24 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:10:35 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 23874)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:10:35 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:10:37 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:11:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 23877)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:11:08 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:11:10 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:12:48 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 954)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 23904)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:12:49 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:12:50 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:13:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 23930)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:13:36 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:13:38 -0300
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:13:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 23891)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:13:56 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:13:58 -0300
+Started POST "/users/sign_in" for ::1 at 2020-05-07 22:14:14 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"tSlvA2UrJvbo/oJl5lAUkIz6/WS0DNm/eN+tDUgfXzo7k2ZNZtSBYK4Rm7qC4coiWTkRSA9e6V8JWkInBA45WQ==", "user"=>{"email"=>"matheus.puppe@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matheus.puppe@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 111ms (ActiveRecord: 0.3ms | Allocations: 4413)
+
+
+Started GET "/" for ::1 at 2020-05-07 22:14:14 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 4.4ms | Allocations: 5273)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 6651)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 330)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.7ms | Allocations: 30212)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:14:15 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:14:17 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:14:17 -0300
+Started DELETE "/users/sign_out" for ::1 at 2020-05-07 22:14:22 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t5QUBFtIX0mBRWlNaxsUbraSbwM4VmiFWWtLyPXibLDjdPKYr9/4kv4NBSi1q60Mv5akAOcWehCYqTkgg4vSTw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2192)
+
+
+Started GET "/" for ::1 at 2020-05-07 22:14:22 -0300
+Processing by SchedulerController#show as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-05-07 22:14:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 697)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 21672)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:14:22 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:14:24 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:14:24 -0300
+Started POST "/users/sign_in" for ::1 at 2020-05-07 22:21:25 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"vUzpEoF1OI0grrnDOkFV8k2n3O5V6SGmk4O21tOuZOuxcWVWSZk1JazrBMPrVYIyeQP2cfFoxIhiDjF03HZaXw==", "user"=>{"email"=>"matheus.puppe@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matheus.puppe@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms (ActiveRecord: 0.8ms | Allocations: 2887)
+
+
+Started GET "/" for ::1 at 2020-05-07 22:21:25 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 4.6ms | Allocations: 4825)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 5788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.5ms | Allocations: 28128)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:21:26 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:21:28 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:21:28 -0300
+Started GET "/meetings" for ::1 at 2020-05-07 22:23:34 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:18
+  Rendered meetings/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2871)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.5ms | Allocations: 26032)
+
+
+Started GET "/meetings/new" for ::1 at 2020-05-07 22:23:35 -0300
+Processing by MeetingsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 6.2ms | Allocations: 3211)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4195)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 121)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 0.3ms | Allocations: 26551)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/meetings/new" for ::1 at 2020-05-07 22:25:29 -0300
+Processing by MeetingsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 3.5ms | Allocations: 2502)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 51.4ms | Allocations: 93582)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 99ms (Views: 78.4ms | ActiveRecord: 5.8ms | Allocations: 130293)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:25:30 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:25:32 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDistrictToMeetings (20200508012627)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "meetings" ADD "district" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508012627"]]
+  [1m[35m (54.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/meetings/new" for ::1 at 2020-05-07 22:26:36 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MeetingsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 7.3ms | Allocations: 4468)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 5450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 335)
+Completed 200 OK in 45ms (Views: 23.3ms | ActiveRecord: 4.8ms | Allocations: 44338)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:26:37 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:26:39 -0300
+Started GET "/meetings/new" for ::1 at 2020-05-07 22:26:52 -0300
+Processing by MeetingsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 4.5ms | Allocations: 2751)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 56.0ms | Allocations: 93872)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+Completed 200 OK in 101ms (Views: 76.0ms | ActiveRecord: 6.3ms | Allocations: 131109)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:26:52 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:26:54 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/availabilities" for ::1 at 2020-05-07 22:27:25 -0300
+Processing by AvailabilitiesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering availabilities/index.html.erb within layouts/application
+  [1m[36mAvailability Load (0.4ms)[0m  [1m[34mSELECT "availabilities".* FROM "availabilities"[0m
+  ↳ app/views/availabilities/index.html.erb:17
+  Rendered availabilities/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 6568)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 128)
+Completed 200 OK in 36ms (Views: 21.4ms | ActiveRecord: 5.2ms | Allocations: 36536)
+
+
+Started GET "/scheduler/clients-delivers" for ::1 at 2020-05-07 22:27:27 -0300
+Processing by SchedulerController#clients_delivers as HTML
+  Rendering scheduler/clients_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/clients_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.8ms | Allocations: 2046)
+  Rendered scheduler/clients_delivers.html.erb within layouts/application (Duration: 22.3ms | Allocations: 11423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 4.6ms | Allocations: 34367)
+
+
+Started GET "/scheduler/clients-delivers" for ::1 at 2020-05-07 22:27:57 -0300
+Processing by SchedulerController#clients_delivers as HTML
+  Rendering scheduler/clients_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/clients_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.7ms | Allocations: 1457)
+  Rendered scheduler/clients_delivers.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 330)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.8ms | Allocations: 26293)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:27:57 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:27:59 -0300
+Started GET "/scheduler/clients-delivers" for ::1 at 2020-05-07 22:28:04 -0300
+Processing by SchedulerController#clients_delivers as HTML
+  Rendering scheduler/clients_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/clients_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.3ms | Allocations: 1457)
+  Rendered scheduler/clients_delivers.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 330)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.6ms | Allocations: 26297)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-07 22:28:04 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-07 22:28:06 -0300

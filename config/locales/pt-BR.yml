@@ -6,8 +6,8 @@ pt-BR:
   Created at: Data de criação
   phone: Celular
   Phone: Celular
-  localization: Local de entrega
-  Localization: Local de entrega
+  localization: Endereço
+  Localization: Endereço
   start_time: Horário de entrega
   Start time: Horário de entrega
   Meetings: Agendamentos
@@ -17,6 +17,7 @@ pt-BR:
   products: Produtos
   total_price: Preço Total
   information: Informações
+  district: Bairro
   payment_type: Tipo de pagamento
   Criar Meeting: Criar Agendamento
   Availabilities: Disponibilidades
