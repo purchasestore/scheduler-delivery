@@ -12,11 +12,11 @@
     <% meetings.each do |meeting| %>
     <tbody>
       <tr>
-        <td><%= meeting.name.capitalize %></td>
-        <td><%= meeting.localization.capitalize %></td>
+        <td><%= meeting.name %></td>
+        <td><%= meeting.localization %></td>
         <td><%= meeting.phone %></td>
-        <td><%= meeting.payment_type.capitalize %></td>
-        <td><%= meeting.information.capitalize %></td>
+        <td><%= meeting.payment_type %></td>
+        <td><%= meeting.information %></td>
         <td><%= meeting.start_time.strftime("%H:%M") %></td>
       </tr>
     </tbody>
