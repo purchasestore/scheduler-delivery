@@ -19,6 +19,7 @@ pt-BR:
   information: Informações
   payment_type: Tipo de pagamento
   Criar Meeting: Criar Agendamento
+  Availabilities: Disponibilidades
   activerecord:
     errors:
       messages:
