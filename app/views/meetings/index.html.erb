@@ -11,6 +11,7 @@
       <th><%= t model_class.human_attribute_name(:phone) %></th>
       <th><%= t model_class.human_attribute_name(:start_time) %></th>
       <th><%= t model_class.human_attribute_name(:created_at) %></th>
+      <th>Mensagem Whatsapp</th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -23,6 +24,7 @@
         <td><%= meeting.phone %></td>
         <td><%= meeting.start_time %></td>
         <td><%=l meeting.created_at %></td>
+        <td><a href="https://web.whatsapp.com/send?phone=55<%= meeting.phone %>&amp;text=Oie, tudo bom!! Sou a Lari da Purchase.Estou organizando os pedidos para entrega de motoboy hoje. Poderia confirmar? Confirmando ja te passo o horario que ficou agendado." target="_blank">Clique Aqui para mandar uma mensagem pelo WhatsApp</a></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_meeting_path(meeting), :class => 'btn btn-default btn-xs' %>
