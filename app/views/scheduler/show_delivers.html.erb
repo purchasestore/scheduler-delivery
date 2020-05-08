@@ -6,6 +6,7 @@
       <th>Endereço</th>
       <th>Celular</th>
       <th>Tipo Pagamento</th>
+      <th>Valor Total</th>
       <th>Informações</th>
       <th>Horário</th>
     </thead>
@@ -16,6 +17,7 @@
         <td><%= meeting.localization %></td>
         <td><%= meeting.phone %></td>
         <td><%= meeting.payment_type %></td>
+        <td><%= meeting.total_price %></td>
         <td><%= meeting.information %></td>
         <td><%= meeting.start_time.strftime("%H:%M") %></td>
       </tr>
