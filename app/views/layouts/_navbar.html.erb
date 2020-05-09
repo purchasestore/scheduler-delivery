@@ -5,10 +5,10 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
-      <li><a href="<%= availabilities_path %>">Cadastrar disponibilidade do entregador</a></li>
-      <li><a href="<%= clients_delivers_path %>">Lista de agendamentos clientes</a></li>
-      <li><a href="<%= show_path %>">Lista de agendamentos entregador mensal</a></li>
-      <li><a href="<%= show_delivers_path %>">Lista de agendamentos entregador diário</a></li>
+      <li><a href="<%= availabilities_path %>">Disponibilidades do entregador</a></li>
+      <li><a href="<%= clients_delivers_path %>">Calendário Agendamentos Clientes</a></li>
+      <li><a href="<%= show_path %>">Calendário Agendamentos Entregador Mensal</a></li>
+      <li><a href="<%= show_delivers_path %>">Calendário Agendamentos Entregador Diário</a></li>
       <li><a href="<%= meetings_path %>">Lista de agendamentos clientes</a></li>
       <li><a href="<%= edit_user_registration_path %>">Editar perfil</a></li>
       <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li>

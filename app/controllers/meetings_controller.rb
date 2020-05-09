@@ -67,6 +67,17 @@ class MeetingsController < ApplicationController
     end
   end
 
+  def toggle
+    @meeting = Meeting.find_by_id(params[:id])
+
+    if @meeting != nil?
+      @meeting.update(message_sent: params[:bool])
+      flash[:sucess] = "Tudo tri"
+    else
+      flash[:alert] = "Erro, tente novamente"
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_meeting
