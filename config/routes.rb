@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :availabilities
   resources :meetings
   post '/meetings/:id/toggle', to: 'meetings#toggle', as: 'toogle'
+  get '/meetings/:id/duplicate', to: 'meetings#duplicate', as: 'meeting_duplicate'
 
   get 'scheduler/show', to: 'scheduler#show', as: 'show'
   get 'scheduler/show-delivers', to: 'scheduler#show_delivers', as: 'show_delivers'

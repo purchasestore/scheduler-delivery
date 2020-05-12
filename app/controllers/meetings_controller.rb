@@ -68,13 +68,29 @@ class MeetingsController < ApplicationController
   end
 
   def toggle
-    @meeting = Meeting.find_by_id(params[:id])
+    @meeting = Meeting.find(params[:id])
 
     if @meeting != nil?
       @meeting.update(message_sent: params[:bool])
-      flash[:sucess] = "Tudo tri"
+      flash[:sucess] = "Salvo com sucesso!"
     else
       flash[:alert] = "Erro, tente novamente"
+    end
+    head :ok
+  end  
+
+
+  def duplicate
+    @meeting = Meeting.find(params[:id])
+
+    respond_to do |format|
+      if @meeting != nil?
+        meeting_clone = @meeting.dup
+        meeting_clone.save
+        format.html { redirect_to meetings_path, notice: 'Cópia Agendamento feita com sucesso.' }
+      else
+        flash[:alert] = "Erro, tente novamente"
+      end
     end
   end
 

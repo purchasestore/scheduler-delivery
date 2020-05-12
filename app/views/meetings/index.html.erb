@@ -28,6 +28,8 @@
         <td><a href="https://web.whatsapp.com/send?phone=55<%= meeting.phone %>&amp;text=Oie, tudo bom!! Sou a Lari da Purchase.Estou organizando os pedidos para entrega de motoboy hoje. Poderia confirmar? Confirmando ja te passo o horario que ficou agendado." target="_blank">Clique Aqui para mandar uma mensagem pelo WhatsApp</a></td>
         <td><%= check_box_tag 'message_sent', meeting.id, meeting.message_sent, class: 'message_sent' %></td>
         <td>
+          <%= link_to t('.duplicate', :default => t("helpers.links.duplicate")),
+                      meeting_duplicate_path(meeting), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_meeting_path(meeting), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
