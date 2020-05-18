@@ -10,6 +10,8 @@
       <th>Valor Total</th>
       <th>Informações</th>
       <th>Horário</th>
+      <th>Pedido Preparado?</th>
+      <th>Pedido Entregue?</th>
     </thead>
     <% meetings.each do |meeting| %>
     <tbody>
@@ -22,6 +24,8 @@
         <td><%= meeting.total_price %></td>
         <td><%= meeting.information %></td>
         <td><%= meeting.start_time.strftime("%H:%M") %></td>
+        <td><%= check_box_tag 'package_ready', meeting.id, meeting.package_ready, class: 'package_ready' %></td>
+        <td><%= check_box_tag 'package_delivered', meeting.id, meeting.package_delivered, class: 'package_delivered' %></td>
       </tr>
     </tbody>
     <% end %>

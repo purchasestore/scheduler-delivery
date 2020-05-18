@@ -23,7 +23,7 @@
         <td><%= meeting.name %></td>
         <td><%= meeting.localization %></td>
         <td><%= meeting.phone %></td>
-        <td><%= meeting.start_time %></td>
+        <td><%=l meeting.start_time %></td>
         <td><%=l meeting.created_at %></td>
         <td><a href="https://web.whatsapp.com/send?phone=55<%= meeting.phone %>&amp;text=Oie, tudo bom!! Sou a Lari da Purchase.Estou organizando os pedidos para entrega de motoboy hoje. Poderia confirmar? Confirmando ja te passo o horario que ficou agendado." target="_blank">Clique Aqui para mandar uma mensagem pelo WhatsApp</a></td>
         <td><%= check_box_tag 'message_sent', meeting.id, meeting.message_sent, class: 'message_sent' %></td>
@@ -46,23 +46,26 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_meeting_path,
             :class => 'btn btn-primary' %>
+
 <script type="text/javascript">
  
-  var checkbox = document.querySelector(".message_sent");
+  var checkbox = document.querySelectorAll(".message_sent");
 
-  checkbox.addEventListener('change', function() {
-    fetch('/meetings/'+this.value+'/toggle', {
-      method: 'post',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-      },
-      body: JSON.stringify({bool: this.checked})
-    }).then(function (res) {
-      console.log('nayce');
-    }).catch(function (err) {
-        return console.log(err);
+  checkbox.forEach(function(check, index) {
+    check.addEventListener('change', function() {
+      fetch('/meetings/' + this.value + '/toggle', {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({bool: this.checked})
+      }).then(function (res) {
+        console.log('OK');
+      }).catch(function (err) {
+          return console.log(err);
+      });
     });
   });
 

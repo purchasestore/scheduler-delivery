@@ -19546,3 +19546,1628 @@ Processing by SchedulerController#show as HTML
 Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 1.0ms | Allocations: 28221)
 
 
+Started GET "/meetings" for ::1 at 2020-05-18 19:00:28 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4833)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 1.5ms | Allocations: 27184)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:04:04 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.6ms | Allocations: 1731)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-05-18 19:04:05 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 76.6ms | Allocations: 2101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 94.2ms | ActiveRecord: 0.0ms | Allocations: 25050)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:04:05 -0300
+Started POST "/users/sign_in" for ::1 at 2020-05-18 19:04:06 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"A5q3mzi2rft6/9obK1hpH5ZjLKjUNJQnanLNmcenDtJ4PzbEs21CMJsPK2Jwy0cZyzv+jxEIbeDubr7qQOHixw==", "user"=>{"email"=>"matheus.puppe@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matheus.puppe@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/meetings
+Completed 302 Found in 222ms (ActiveRecord: 0.7ms | Allocations: 6431)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:04:06 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 34.6ms | Allocations: 36987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 123)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.8ms | Allocations: 59245)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:04:07 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:04:07 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:04:07 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:04:08 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:04:08 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:04:37 -0300
+Started GET "/rails/info/routes" for ::1 at 2020-05-18 19:05:20 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [57 times] (Duration: 55.5ms | Allocations: 8362)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 18.8ms | Allocations: 921)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 115.2ms | Allocations: 13783)
+Completed 200 OK in 151ms (Views: 130.0ms | ActiveRecord: 0.0ms | Allocations: 15235)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-05-18 19:05:22 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [57 times] (Duration: 23.3ms | Allocations: 8337)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/actionpack-6.0.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.4ms | Allocations: 712)
+  Rendered /home/matheuspuppe/.rvm/gems/ruby-2.5.5/gems/railties-6.0.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 32.8ms | Allocations: 13537)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 14956)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:05:22 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:05:24 -0300
+Started GET "/rails/info/routes?path=show_path" for ::1 at 2020-05-18 19:06:01 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"show_path"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/" for ::1 at 2020-05-18 19:07:48 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.8ms | Allocations: 6463)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 18.0ms | Allocations: 8965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 333)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 1.0ms | Allocations: 33141)
+
+
+Started GET "/" for ::1 at 2020-05-18 19:07:49 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.3ms | Allocations: 6002)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 8052)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 1.0ms | Allocations: 30400)
+
+
+Started GET "/" for ::1 at 2020-05-18 19:07:50 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.4ms | Allocations: 5999)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 8050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.8ms | Allocations: 30393)
+
+
+Started GET "/" for ::1 at 2020-05-18 19:07:51 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.4ms | Allocations: 5998)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 16.6ms | Allocations: 8048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 44ms (Views: 37.8ms | ActiveRecord: 0.8ms | Allocations: 30395)
+
+
+Started GET "/" for ::1 at 2020-05-18 19:07:52 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.3ms | Allocations: 5998)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 8048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 0.7ms | Allocations: 30386)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:07:52 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:07:54 -0300
+Started GET "/scheduler/show-delivers" for ::1 at 2020-05-18 19:11:09 -0300
+Processing by SchedulerController#show_delivers as HTML
+  Rendering scheduler/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.8ms | Allocations: 1457)
+  Rendered scheduler/show_delivers.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.8ms | Allocations: 25861)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:11:10 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 39.6ms | Allocations: 37578)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 58ms (Views: 53.9ms | ActiveRecord: 0.9ms | Allocations: 60690)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" ORDER BY "meetings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/meetings" for ::1 at 2020-05-18 19:16:45 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" ORDER BY "meetings"."start_time" ASC[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 37.8ms | Allocations: 45059)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/public/packs
+[Webpacker] Hash: d6896cfa0a7efe27db19
+Version: webpack 4.41.2
+Time: 618ms
+Built at: 2020-05-18 7:16:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c9a42e8336b5daa972b6.js    215 KiB  application  [emitted] [immutable]  application
+js/application-c9a42e8336b5daa972b6.js.map    216 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c9a42e8336b5daa972b6.js js/application-c9a42e8336b5daa972b6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 185 bytes {application} [built]
+[./app/javascript/controllers/drag_controller.js] 2.54 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 35 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 128)
+Completed 200 OK in 1608ms (Views: 1578.4ms | ActiveRecord: 7.4ms | Allocations: 77125)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:16:47 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:16:48 -0300
+Started GET "/scheduler/show-delivers" for ::1 at 2020-05-18 19:17:56 -0300
+Processing by SchedulerController#show_delivers as HTML
+  Rendering scheduler/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.0ms | Allocations: 1596)
+  Rendered scheduler/show_delivers.html.erb within layouts/application (Duration: 13.8ms | Allocations: 12436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 127)
+Completed 200 OK in 41ms (Views: 34.2ms | ActiveRecord: 5.6ms | Allocations: 40559)
+
+
+Started GET "/scheduler/show-delivers" for ::1 at 2020-05-18 19:17:57 -0300
+Processing by SchedulerController#show_delivers as HTML
+  Rendering scheduler/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 1.2ms | Allocations: 980)
+  Rendered scheduler/show_delivers.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3002)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 115)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.6ms | Allocations: 24801)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:17:57 -0300
+Started GET "/scheduler/show" for ::1 at 2020-05-18 19:17:58 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.2ms | Allocations: 6005)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 17.2ms | Allocations: 8055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 43ms (Views: 33.6ms | ActiveRecord: 1.1ms | Allocations: 31407)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:17:59 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:18:00 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" ORDER BY "meetings"."start_time" ASC[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 37048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 69ms (Views: 64.7ms | ActiveRecord: 0.8ms | Allocations: 59608)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:18:01 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" ORDER BY "meetings"."start_time" ASC[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 36984)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.7ms | Allocations: 59255)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:18:02 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:18:03 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:18:05 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" ORDER BY "meetings"."start_time" DESC[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 41.6ms | Allocations: 45105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 128)
+Completed 200 OK in 74ms (Views: 59.2ms | ActiveRecord: 5.8ms | Allocations: 75568)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:18:06 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:18:08 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:18:48 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 45748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 128)
+Completed 200 OK in 81ms (Views: 61.4ms | ActiveRecord: 8.3ms | Allocations: 75419)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:18:48 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:18:50 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/meetings" for ::1 at 2020-05-18 19:20:23 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 92.2ms | Allocations: 135409)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 358)
+Completed 200 OK in 803ms (Views: 776.5ms | ActiveRecord: 7.5ms | Allocations: 1713689)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:20:24 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:20:26 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPackageReadyToMeetings (20200518222444)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (178.7ms)[0m  [1m[35mALTER TABLE "meetings" ADD "package_ready" boolean DEFAULT FALSE[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200518222444"]]
+  [1m[35m (44.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2020-05-18 22:25:21.152952"], ["key", "environment"]]
+  [1m[35m (37.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-05-18 19:29:42 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.0ms | Allocations: 7129)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 22.4ms | Allocations: 18104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 334)
+Completed 200 OK in 71ms (Views: 48.8ms | ActiveRecord: 1.5ms | Allocations: 49301)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:29:42 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:29:44 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:29:44 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 28.6ms | Allocations: 39432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 123)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.8ms | Allocations: 62628)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:30:07 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 36.0ms | Allocations: 42185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 334)
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 0.5ms | Allocations: 66224)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:30:08 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:30:09 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:31:31 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 33.8ms | Allocations: 42185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 331)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.5ms | Allocations: 66207)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:31:32 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:31:33 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:31:38 -0300
+Processing by MeetingsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (2.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 56.3ms | Allocations: 42397)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 82ms (Views: 74.0ms | ActiveRecord: 3.0ms | Allocations: 64977)
+
+
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:40 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms | Allocations: 5891)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b0ab20d8>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:41 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms | Allocations: 5675)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b1c5aa88>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:41 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms | Allocations: 9723)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b2739f80>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:41 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.8ms | Allocations: 12774)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00005653a1211808>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:42 -0300
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:42 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mMeeting Load (1.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 6.2ms | Allocations: 24046)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b1751208>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mUser Load (27.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 29.4ms | Allocations: 317052)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b2686ca0>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:42 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms | Allocations: 5607)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b29df938>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:31:42 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.4ms | Allocations: 9407)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b2687d30>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:33:24 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms | Allocations: 5607)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b251bf00>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:33:25 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.8ms | Allocations: 5607)
+
+
+  
+NoMethodError (undefined method `position' for #<Meeting:0x00007f58b11f7190>
+Did you mean?  position=):
+  
+app/controllers/meetings_controller.rb:74:in `toggle'
+Started GET "/meetings" for ::1 at 2020-05-18 19:34:52 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 51458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 336)
+Completed 200 OK in 71ms (Views: 54.6ms | ActiveRecord: 6.0ms | Allocations: 82940)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:34:52 -0300
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:34:53 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 500 Internal Server Error in 229235ms (ActiveRecord: 0.9ms | Allocations: 159984)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `toggle'
+app/controllers/meetings_controller.rb:75:in `toggle'
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:38:43 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/meetings" for ::1 at 2020-05-18 19:39:00 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 123.2ms | Allocations: 140481)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 358)
+Completed 200 OK in 975ms (Views: 946.4ms | ActiveRecord: 7.6ms | Allocations: 1718311)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:39:02 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:39:04 -0300
+Started POST "/meetings/46/toggle" for ::1 at 2020-05-18 19:39:04 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"46", "meeting"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 22:39:04.564356"], ["id", 46]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (58.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 68ms (ActiveRecord: 59.7ms | Allocations: 4886)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:39:15 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 41320)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 80ms (Views: 76.9ms | ActiveRecord: 0.6ms | Allocations: 63582)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:39:15 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:39:17 -0300
+Started POST "/meetings/40/toggle" for ::1 at 2020-05-18 19:39:22 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"40", "meeting"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.2ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 22:39:22.082809"], ["id", 40]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (22.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 29ms (ActiveRecord: 22.9ms | Allocations: 4560)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:40:23 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 34.3ms | Allocations: 41934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 331)
+Completed 200 OK in 53ms (Views: 48.3ms | ActiveRecord: 0.9ms | Allocations: 65989)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:40:23 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:40:25 -0300
+Started POST "/meetings/39/toggle" for ::1 at 2020-05-18 19:40:26 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"39", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 22:40:26.691387"], ["id", 39]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (29.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 38ms (ActiveRecord: 30.4ms | Allocations: 4562)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:40:51 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 35.6ms | Allocations: 41924)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 331)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.6ms | Allocations: 65979)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:40:55 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:40:56 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 19:51:54 -0300
+Processing by MeetingsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 56.9ms | Allocations: 41976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 332)
+Completed 200 OK in 93ms (Views: 85.8ms | ActiveRecord: 1.4ms | Allocations: 66243)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 19:51:56 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 27.6ms | Allocations: 41321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 116)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.9ms | Allocations: 63771)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 19:51:57 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 19:51:59 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:02:28 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 54.3ms | Allocations: 41982)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 331)
+Completed 200 OK in 79ms (Views: 71.9ms | ActiveRecord: 1.7ms | Allocations: 66129)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:02:29 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:02:30 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:03:30 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 53.3ms | Allocations: 41928)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 332)
+Completed 200 OK in 82ms (Views: 78.7ms | ActiveRecord: 0.7ms | Allocations: 65952)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:03:31 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:03:32 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:12:01 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 40.3ms | Allocations: 41997)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 331)
+Completed 200 OK in 62ms (Views: 57.4ms | ActiveRecord: 1.4ms | Allocations: 66131)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:12:02 -0300
+Started POST "/meetings/41/toggle" for ::1 at 2020-05-18 20:12:03 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"41", "meeting"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:03.085779"], ["id", 41]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 50ms (ActiveRecord: 33.7ms | Allocations: 4563)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:12:04 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:12:04 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 47.9ms | Allocations: 41322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 116)
+Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.8ms | Allocations: 63571)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:12:05 -0300
+Started POST "/meetings/14/toggle" for ::1 at 2020-05-18 20:12:06 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"14", "meeting"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.7ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:06.739126"], ["id", 14]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (25.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 46ms (ActiveRecord: 27.6ms | Allocations: 4569)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:12:06 -0300
+Started POST "/meetings/28/toggle" for ::1 at 2020-05-18 20:12:08 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"28", "meeting"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.1ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:08.432669"], ["id", 28]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (30.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 60ms (ActiveRecord: 33.4ms | Allocations: 4570)
+
+
+Started POST "/meetings/31/toggle" for ::1 at 2020-05-18 20:12:10 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"31", "meeting"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:10.462300"], ["id", 31]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (26.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 55ms (ActiveRecord: 30.1ms | Allocations: 4569)
+
+
+Started POST "/meetings/19/toggle" for ::1 at 2020-05-18 20:12:11 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"19", "meeting"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:11.716580"], ["id", 19]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 39ms (ActiveRecord: 32.2ms | Allocations: 4566)
+
+
+Started POST "/meetings/24/toggle" for ::1 at 2020-05-18 20:12:13 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"24", "meeting"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:13.794525"], ["id", 24]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (42.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 63ms (ActiveRecord: 45.7ms | Allocations: 4580)
+
+
+Started POST "/meetings/13/toggle" for ::1 at 2020-05-18 20:12:14 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"13", "meeting"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (2.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.5ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:14.665038"], ["id", 13]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 48ms (ActiveRecord: 34.6ms | Allocations: 4570)
+
+
+Started POST "/meetings/32/toggle" for ::1 at 2020-05-18 20:12:15 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"32", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.0ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:15.602833"], ["id", 32]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (46.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 72ms (ActiveRecord: 49.6ms | Allocations: 4574)
+
+
+Started POST "/meetings/22/toggle" for ::1 at 2020-05-18 20:12:16 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"22", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.1ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:16.643639"], ["id", 22]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 68ms (ActiveRecord: 44.2ms | Allocations: 4581)
+
+
+Started POST "/meetings/17/toggle" for ::1 at 2020-05-18 20:12:17 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"17", "meeting"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.6ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:17.580667"], ["id", 17]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (26.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 42ms (ActiveRecord: 28.6ms | Allocations: 4570)
+
+
+Started POST "/meetings/23/toggle" for ::1 at 2020-05-18 20:12:19 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"23", "meeting"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.5ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:19.032333"], ["id", 23]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 54ms (ActiveRecord: 34.8ms | Allocations: 4572)
+
+
+Started POST "/meetings/25/toggle" for ::1 at 2020-05-18 20:12:19 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"25", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:19.931516"], ["id", 25]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (23.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 46ms (ActiveRecord: 26.6ms | Allocations: 4572)
+
+
+Started POST "/meetings/34/toggle" for ::1 at 2020-05-18 20:12:21 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"34", "meeting"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.0ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:21.922182"], ["id", 34]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (37.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 62ms (ActiveRecord: 40.5ms | Allocations: 4571)
+
+
+Started POST "/meetings/43/toggle" for ::1 at 2020-05-18 20:12:23 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"43", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.2ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:23.531427"], ["id", 43]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (64.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 71ms (ActiveRecord: 65.6ms | Allocations: 4570)
+
+
+Started POST "/meetings/15/toggle" for ::1 at 2020-05-18 20:12:24 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"15", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:24.741293"], ["id", 15]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (26.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 35ms (ActiveRecord: 27.5ms | Allocations: 4574)
+
+
+Started POST "/meetings/12/toggle" for ::1 at 2020-05-18 20:12:25 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"12", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:25.426399"], ["id", 12]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (33.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 62ms (ActiveRecord: 37.2ms | Allocations: 4566)
+
+
+Started POST "/meetings/27/toggle" for ::1 at 2020-05-18 20:12:26 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"27", "meeting"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.5ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:26.359183"], ["id", 27]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (24.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 38ms (ActiveRecord: 26.6ms | Allocations: 4578)
+
+
+Started POST "/meetings/30/toggle" for ::1 at 2020-05-18 20:12:28 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"30", "meeting"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:28.492201"], ["id", 30]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (113.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 127ms (ActiveRecord: 115.4ms | Allocations: 4574)
+
+
+Started POST "/meetings/35/toggle" for ::1 at 2020-05-18 20:12:29 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"35", "meeting"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:29.950771"], ["id", 35]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 50ms (ActiveRecord: 33.5ms | Allocations: 4568)
+
+
+Started POST "/meetings/42/toggle" for ::1 at 2020-05-18 20:12:31 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"42", "meeting"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:31.364440"], ["id", 42]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (24.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 32ms (ActiveRecord: 25.5ms | Allocations: 4572)
+
+
+Started POST "/meetings/44/toggle" for ::1 at 2020-05-18 20:12:32 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"44", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:32.086276"], ["id", 44]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (25.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 33ms (ActiveRecord: 26.7ms | Allocations: 4570)
+
+
+Started POST "/meetings/21/toggle" for ::1 at 2020-05-18 20:12:33 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"21", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:33.283080"], ["id", 21]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 38ms (ActiveRecord: 32.7ms | Allocations: 4568)
+
+
+Started POST "/meetings/45/toggle" for ::1 at 2020-05-18 20:12:34 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"45", "meeting"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:34.516855"], ["id", 45]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (22.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 30ms (ActiveRecord: 23.2ms | Allocations: 4573)
+
+
+Started POST "/meetings/47/toggle" for ::1 at 2020-05-18 20:12:35 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"47", "meeting"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.2ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:35.741697"], ["id", 47]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 42ms (ActiveRecord: 33.1ms | Allocations: 4566)
+
+
+Started POST "/meetings/48/toggle" for ::1 at 2020-05-18 20:12:36 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"48", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.6ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:36.634379"], ["id", 48]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (46.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 70ms (ActiveRecord: 48.9ms | Allocations: 4569)
+
+
+Started POST "/meetings/49/toggle" for ::1 at 2020-05-18 20:12:38 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"49", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:38.589357"], ["id", 49]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (65.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 80ms (ActiveRecord: 67.1ms | Allocations: 4573)
+
+
+Started POST "/meetings/50/toggle" for ::1 at 2020-05-18 20:12:39 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"50", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (1.1ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:39.242536"], ["id", 50]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 57ms (ActiveRecord: 34.2ms | Allocations: 4567)
+
+
+Started POST "/meetings/51/toggle" for ::1 at 2020-05-18 20:12:40 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"51", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:40.276045"], ["id", 51]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (24.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 50ms (ActiveRecord: 27.2ms | Allocations: 4565)
+
+
+Started POST "/meetings/53/toggle" for ::1 at 2020-05-18 20:12:42 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"53", "meeting"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:12:42.632739"], ["id", 53]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 39ms (ActiveRecord: 31.9ms | Allocations: 4571)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 20:12:45 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:21
+  Rendered meetings/index.html.erb within layouts/application (Duration: 53.2ms | Allocations: 41346)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 116)
+Completed 200 OK in 76ms (Views: 71.9ms | ActiveRecord: 0.9ms | Allocations: 63583)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:12:45 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:12:47 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:22:47 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 38.7ms | Allocations: 40512)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 331)
+Completed 200 OK in 59ms (Views: 53.0ms | ActiveRecord: 1.4ms | Allocations: 64658)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:22:48 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:22:49 -0300
+Started GET "/scheduler/show" for ::1 at 2020-05-18 20:24:51 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 13.6ms | Allocations: 7121)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 22.2ms | Allocations: 9681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 123)
+Completed 200 OK in 59ms (Views: 52.4ms | ActiveRecord: 1.2ms | Allocations: 32929)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:24:52 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:24:53 -0300
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPackageReadyToMeetings (20200518222444)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "meetings" DROP COLUMN "package_ready"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200518222444"]]
+  [1m[35m (39.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPackageReadyToMeetings (20200518222444)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (312.0ms)[0m  [1m[35mALTER TABLE "meetings" ADD "package_ready" boolean DEFAULT FALSE[0m
+  [1m[35m (163.4ms)[0m  [1m[35mALTER TABLE "meetings" ADD "package_deliverered" boolean DEFAULT FALSE[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200518222444"]]
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPackageReadyToMeetings (20200518222444)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "meetings" DROP COLUMN "package_deliverered"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "meetings" DROP COLUMN "package_ready"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200518222444"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPackageReadyToMeetings (20200518222444)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (237.9ms)[0m  [1m[35mALTER TABLE "meetings" ADD "package_ready" boolean DEFAULT FALSE[0m
+  [1m[35m (230.5ms)[0m  [1m[35mALTER TABLE "meetings" ADD "package_delivered" boolean DEFAULT FALSE[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200518222444"]]
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7480397568325356465)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/scheduler/show" for ::1 at 2020-05-18 20:34:31 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.6ms | Allocations: 7065)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 21.0ms | Allocations: 18668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 334)
+Completed 200 OK in 53ms (Views: 39.5ms | ActiveRecord: 1.3ms | Allocations: 49406)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:34:31 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:34:33 -0300
+Started GET "/scheduler/show" for ::1 at 2020-05-18 20:34:38 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.2ms | Allocations: 6003)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 8061)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.8ms | Allocations: 30408)
+
+
+Started GET "/scheduler/show" for ::1 at 2020-05-18 20:34:39 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.9ms | Allocations: 5999)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 8057)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 0.9ms | Allocations: 30401)
+
+
+Started GET "/scheduler/show" for ::1 at 2020-05-18 20:35:42 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.2ms | Allocations: 6451)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 8964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 330)
+Completed 200 OK in 42ms (Views: 29.6ms | ActiveRecord: 0.8ms | Allocations: 33116)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:35:43 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:35:44 -0300
+Started GET "/scheduler/show" for ::1 at 2020-05-18 20:36:04 -0300
+Processing by SchedulerController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering scheduler/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/scheduler/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.5ms | Allocations: 9758)
+  Rendered scheduler/show.html.erb within layouts/application (Duration: 15.2ms | Allocations: 12303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 330)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.7ms | Allocations: 36433)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:36:04 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:36:06 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:42:18 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 90.8ms | Allocations: 49547)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 336)
+Completed 200 OK in 133ms (Views: 116.2ms | ActiveRecord: 1.8ms | Allocations: 80264)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:42:18 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:42:20 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 32.8ms | Allocations: 39871)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.6ms | Allocations: 62106)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:42:20 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:42:20 -0300
+Started POST "/meetings/18/toggle" for ::1 at 2020-05-18 20:42:21 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "field"=>"message_sent", "id"=>"18", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 200 OK in 4ms (ActiveRecord: 0.6ms | Allocations: 2475)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:42:22 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:42:23 -0300
+Processing by MeetingsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 53.2ms | Allocations: 39867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 0.7ms | Allocations: 63199)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 20:42:26 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 37.4ms | Allocations: 39867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 116)
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.9ms | Allocations: 62096)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:42:27 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:42:28 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 41.6ms | Allocations: 39867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 116)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.8ms | Allocations: 62089)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:42:28 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:42:28 -0300
+Started POST "/meetings/18/toggle" for ::1 at 2020-05-18 20:42:29 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "field"=>"message_sent", "id"=>"18", "meeting"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+Completed 200 OK in 4ms (ActiveRecord: 0.4ms | Allocations: 2361)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:42:30 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:42:31 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 58.2ms | Allocations: 39867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 81ms (Views: 76.5ms | ActiveRecord: 0.8ms | Allocations: 62110)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:42:31 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:42:33 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:45:34 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 61.1ms | Allocations: 50617)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 336)
+Completed 200 OK in 95ms (Views: 76.7ms | ActiveRecord: 7.0ms | Allocations: 81498)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:45:35 -0300
+Started POST "/meetings/18/toggle" for ::1 at 2020-05-18 20:45:36 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>false, "id"=>"18", "meeting"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", false], ["updated_at", "2020-05-18 23:45:36.443401"], ["id", 18]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (49.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 68ms (ActiveRecord: 51.5ms | Allocations: 4679)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:45:36 -0300
+Started GET "/meetings" for ::1 at 2020-05-18 20:45:37 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 37.4ms | Allocations: 39870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 0.6ms | Allocations: 62114)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:45:38 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:45:40 -0300
+Started POST "/meetings/18/toggle" for ::1 at 2020-05-18 20:45:42 -0300
+Processing by MeetingsController#toggle as JSON
+  Parameters: {"bool"=>true, "id"=>"18", "meeting"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:71:in `toggle'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[36mMeeting Update (0.8ms)[0m  [1m[33mUPDATE "meetings" SET "message_sent" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["message_sent", true], ["updated_at", "2020-05-18 23:45:42.275197"], ["id", 18]]
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+  [1m[35m (48.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:74:in `toggle'
+Completed 200 OK in 76ms (ActiveRecord: 51.6ms | Allocations: 4562)
+
+
+Started GET "/meetings" for ::1 at 2020-05-18 20:45:43 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:20
+  Rendered meetings/index.html.erb within layouts/application (Duration: 52.2ms | Allocations: 39867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 0.6ms | Allocations: 62113)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-18 20:45:43 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-18 20:45:45 -0300
