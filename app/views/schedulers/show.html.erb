@@ -1,0 +1,78 @@
+<%= month_calendar events: @meetings do |date, meetings| %>
+  <%= l(date) %>
+  <table class="table table-striped table-responsive">
+    <thead>
+      <th>Cliente</th>
+      <th>Endereço</th>
+      <th>Celular</th>
+      <th>Produtos</th>
+      <th>Tipo Pagamento</th>
+      <th>Valor Total</th>
+      <th>Informações</th>
+      <th>Horário</th>
+      <th>Pedido Preparado?</th>
+      <th>Pedido Entregue?</th>
+    </thead>
+    <% meetings.each do |meeting| %>
+    <tbody>
+      <tr>
+        <td><%= meeting.name %></td>
+        <td><%= meeting.localization %></td>
+        <td><%= meeting.phone %></td>
+        <td><%= meeting.products %></td>
+        <td><%= meeting.payment_type %></td>
+        <td><%= meeting.total_price %></td>
+        <td><%= meeting.information %></td>
+        <td><%= meeting.start_time.strftime("%H:%M") %></td>
+        <td><%= check_box_tag 'package_ready', meeting.id, meeting.package_ready, class: 'package_ready' %></td>
+        <td><%= check_box_tag 'package_delivered', meeting.id, meeting.package_delivered, class: 'package_delivered' %></td>
+      </tr>
+    </tbody>
+    <% end %>
+  </table>
+<% end %>
+
+
+<script type="text/javascript">
+ 
+  var package_ready = document.querySelectorAll(".package_ready");
+
+  package_ready.forEach(function(check, index) {
+    check.addEventListener('change', function() {
+      fetch('/schedulers/' + this.value + '/toggle_scheduler', {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({bool: this.checked, field: package_ready[0].className} )
+      }).then(function (res) {
+        console.log('OK package_ready');
+      }).catch(function (err) {
+          return console.log(err);
+      });
+    });
+  });  
+
+  var package_delivered = document.querySelectorAll(".package_delivered");
+
+  package_delivered.forEach(function(check, index) {
+    check.addEventListener('change', function() {
+      fetch('/schedulers/' + this.value + '/toggle_scheduler', {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({bool: this.checked, field: package_delivered[0].className} )
+      }).then(function (res) {
+        console.log('OK package_delivered');
+      }).catch(function (err) {
+          return console.log(err);
+      });
+    });
+  });
+
+</script>
