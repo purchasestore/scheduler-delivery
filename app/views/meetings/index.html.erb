@@ -2,6 +2,9 @@
 <div class="page-header">
   <h1><%=t '.title', :default => t(model_class.model_name.human.pluralize.titleize) %></h1>
 </div>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_meeting_path,
+            :class => 'btn btn-primary' %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -42,10 +45,6 @@
     <% end %>
   </tbody>
 </table>
-
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_meeting_path,
-            :class => 'btn btn-primary' %>
 
 <script type="text/javascript">
  
