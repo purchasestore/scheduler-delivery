@@ -15,7 +15,15 @@
     </thead>
     <% meetings.each do |meeting| %>
     <tbody>
-      <tr>
+      <% if meeting.package_delivered %>
+        <% color = '#55cb50'  %>
+      <% elsif meeting.package_ready %>
+        <% color = '#ffff00'  %>
+      <% else %>
+        <% color = '#ffffff'  %>
+      <% end %>  
+
+      <tr style="background: <%= color %>">
         <td><%= meeting.name %></td>
         <td><%= meeting.localization %></td>
         <td><%= meeting.phone %></td>
