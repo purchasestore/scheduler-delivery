@@ -1,5 +1,6 @@
 class MeetingsController < ApplicationController
-  before_action :set_meeting, only: [:show, :edit, :update, :destroy]
+  before_action :set_meeting, only: [:show, :edit, :update, 
+                                     :destroy, :move]
 
   # GET /meetings
   # GET /meetings.json
@@ -92,6 +93,11 @@ class MeetingsController < ApplicationController
         flash[:alert] = "Erro, tente novamente"
       end
     end
+  end
+
+  def move
+    @meeting.insert_at(params[:position].to_i)
+    head :ok
   end
 
   private

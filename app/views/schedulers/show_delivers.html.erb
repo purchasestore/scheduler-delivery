@@ -1,6 +1,6 @@
 <%= calendar events: @meetings do |date, meetings| %>
   <%= l(date) %>
-  <table class="table table-striped table-responsive">
+  <table data-controller="drag" data-drag-url="/meetings/:id/move" class="table table-striped table-responsive">
     <thead>
       <th>Cliente</th>
       <th>Endereço</th>
@@ -11,8 +11,8 @@
       <th>Informações</th>
       <th>Horário</th>
     </thead>
-    <% meetings.each do |meeting| %>
-    <tbody>
+    <% meetings.sort_by {|m| m.position }.each do |meeting| %>
+    <tbody data-id="<%= meeting.id %>">
       <tr>
         <td><%= meeting.name %></td>
         <td><%= meeting.localization %></td>

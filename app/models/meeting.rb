@@ -1,3 +1,3 @@
 class Meeting < ApplicationRecord
-	# acts_as_list
+	acts_as_list
 end

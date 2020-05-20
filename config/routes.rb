@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :availabilities
-  resources :meetings
+  resources :meetings do
+    member do
+      patch :move
+    end
+  end
+  
   post '/meetings/:id/toggle', to: 'meetings#toggle', as: 'toggle'
   post '/schedulers/:id/toggle_scheduler', to: 'schedulers#toggle_scheduler', as: 'toggle_scheduler'
   get '/meetings/:id/duplicate', to: 'meetings#duplicate', as: 'meeting_duplicate'
