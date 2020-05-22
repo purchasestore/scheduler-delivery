@@ -4,27 +4,26 @@
     <thead>
       <th>Cliente</th>
       <th>Endereço</th>
+      <th>CEP</th>
       <th>Bairro</th>
       <th>Celular</th>
       <th>Tipo Pagamento</th>
       <th>Valor Total</th>
       <th>Informações</th>
       <th>Horário</th>
-      <th>Position</th>
     </thead>
-    <%#= meetings.order(position: :asc) %>
     <% meetings.sort_by {|m| m.position }.each do |meeting| %>
     <tbody data-id="<%= meeting.id %>">
       <tr>
         <td><%= meeting.name %></td>
         <td><%= meeting.localization %></td>
+        <td><%= meeting.cep %></td>
         <td><%= meeting.district %></td>
         <td><%= meeting.phone %></td>
         <td><%= meeting.payment_type %></td>
         <td><%= meeting.total_price %></td>
         <td><%= meeting.information %></td>
         <td><%= meeting.start_time.strftime("%H:%M") %></td>
-        <td><%= meeting.position %></td>
       </tr>
     </tbody>
     <% end %>

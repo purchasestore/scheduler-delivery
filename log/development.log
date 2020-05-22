@@ -31554,3 +31554,201 @@ Processing by MeetingsController#cep as */*
 Completed 200 OK in 681ms (Views: 9.1ms | ActiveRecord: 1.4ms | Allocations: 913403)
 
 
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" ORDER BY "meetings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-05-21 22:12:57 -0300
+Processing by SchedulersController#show as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schedulers/show.html.erb within layouts/application
+  [1m[36mMeeting Load (1.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 671.8ms | Allocations: 8708021)
+  Rendered schedulers/show.html.erb within layouts/application (Duration: 868.4ms | Allocations: 11142513)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 6.9ms | Allocations: 99833)
+Completed 200 OK in 1339ms (Views: 1264.3ms | ActiveRecord: 4.3ms | Allocations: 17035465)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:12:59 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:13:01 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-21 22:13:41 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 53.1ms | Allocations: 786643)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 218.3ms | Allocations: 3147166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 6.0ms | Allocations: 99833)
+Completed 200 OK in 619ms (Views: 597.1ms | ActiveRecord: 2.6ms | Allocations: 8700776)
+
+
+Started GET "/schedulers/show-delivers?start_date=2020-05-21" for ::1 at 2020-05-21 22:13:45 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Parameters: {"start_date"=>"2020-05-21"}
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 52.4ms | Allocations: 732403)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 226.3ms | Allocations: 3012248)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 5.8ms | Allocations: 99825)
+Completed 200 OK in 646ms (Views: 628.7ms | ActiveRecord: 3.0ms | Allocations: 8520021)
+
+
+Started GET "/schedulers/show-delivers?start_date=2020-05-20" for ::1 at 2020-05-21 22:13:49 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Parameters: {"start_date"=>"2020-05-20"}
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 70.2ms | Allocations: 1079904)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 238.7ms | Allocations: 3332564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 5.9ms | Allocations: 99825)
+Completed 200 OK in 642ms (Views: 622.2ms | ActiveRecord: 2.5ms | Allocations: 8865412)
+
+
+Started PATCH "/meetings/71/move" for ::1 at 2020-05-21 22:13:54 -0300
+Processing by MeetingsController#move as */*
+  Parameters: {"position"=>"1", "id"=>"71"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[36mMeeting Load (5.8ms)[0m  [1m[37mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[36mMeeting Load (5.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" IS NOT NULL) ORDER BY "meetings"."position" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[36mMeeting Update (1.6ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 59], ["updated_at", "2020-05-22 01:13:54.703699"], ["id", 71]]
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 59)[0m
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[36mMeeting Update All (1.2ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-22 01:13:54.799141' WHERE (1 = 1) AND ("meetings".id != 71) AND ("meetings"."position" >= 1) AND ("meetings"."position" < 2)[0m
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[36mMeeting Update (1.4ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 1], ["updated_at", "2020-05-22 01:13:54.820709"], ["id", 71]]
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 1)[0m
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+  [1m[35m (34.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:105:in `move'
+Completed 200 OK in 367ms (ActiveRecord: 60.9ms | Allocations: 4179468)
+
+
+Started GET "/schedulers/show-delivers?start_date=2020-05-20" for ::1 at 2020-05-21 22:13:56 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Parameters: {"start_date"=>"2020-05-20"}
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 79.8ms | Allocations: 1079903)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 282.9ms | Allocations: 3351534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 5.6ms | Allocations: 99825)
+Completed 200 OK in 733ms (Views: 709.1ms | ActiveRecord: 2.8ms | Allocations: 8882059)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:13:57 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:13:59 -0300
+Started GET "/schedulers/show-delivers?start_date=2020-05-20" for ::1 at 2020-05-21 22:15:09 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Parameters: {"start_date"=>"2020-05-20"}
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 106.4ms | Allocations: 1398000)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 519.7ms | Allocations: 6230397)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 7.5ms | Allocations: 132877)
+Completed 200 OK in 1152ms (Views: 1086.8ms | ActiveRecord: 18.4ms | Allocations: 13513985)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:15:13 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:15:15 -0300
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" = $1 ORDER BY "meetings"."cep" ASC LIMIT $2[0m  [["start_time", "2020-05-20 03:00:00"], ["LIMIT", 11]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" = $1 ORDER BY "meetings"."cep" ASC LIMIT $2[0m  [["start_time", "2020-05-20 03:00:00"], ["LIMIT", 11]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" = $1 ORDER BY "meetings"."cep" ASC LIMIT $2[0m  [["start_time", "2020-05-20 03:00:00"], ["LIMIT", 11]]
+  [1m[36mMeeting Load (1.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2 ORDER BY "meetings"."cep" ASC LIMIT $3[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"], ["LIMIT", 11]]
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2 ORDER BY "meetings"."cep" ASC LIMIT $3[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"], ["LIMIT", 11]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"]]
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2 ORDER BY "meetings"."cep" ASC LIMIT $3[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"], ["LIMIT", 11]]
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2 ORDER BY "meetings"."cep" ASC[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"]]
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2 ORDER BY "meetings"."cep" ASC[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"]]
+Started GET "/schedulers/show-delivers?start_date=2020-05-20" for ::1 at 2020-05-21 22:31:31 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Parameters: {"start_date"=>"2020-05-20"}
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (2.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 115.6ms | Allocations: 1397999)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 516.4ms | Allocations: 6035243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 17.6ms | Allocations: 132877)
+Completed 200 OK in 1168ms (Views: 1123.3ms | ActiveRecord: 5.5ms | Allocations: 13228027)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:31:36 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:31:37 -0300
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."start_time" BETWEEN $1 AND $2 ORDER BY "meetings"."cep" ASC[0m  [["start_time", "2020-05-20 03:00:00"], ["start_time", "2020-05-21 02:59:59.999999"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (0.5ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 1], ["updated_at", "2020-05-22 01:31:49.171229"], ["id", 68]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 1)[0m
+  [1m[36mMeeting Update All (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-22 01:31:49.176771' WHERE (1 = 1) AND ("meetings".id != 68) AND ("meetings"."position" >= 1) AND ("meetings"."position" < 3)[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (1.1ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 2], ["updated_at", "2020-05-22 01:31:49.210728"], ["id", 72]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 2)[0m
+  [1m[36mMeeting Update All (0.9ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-22 01:31:49.223356' WHERE (1 = 1) AND ("meetings".id != 72) AND ("meetings"."position" >= 2) AND ("meetings"."position" < 4)[0m
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (1.1ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 3], ["updated_at", "2020-05-22 01:31:49.257569"], ["id", 70]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 3)[0m
+  [1m[36mMeeting Update All (0.9ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-22 01:31:49.269961' WHERE (1 = 1) AND ("meetings".id != 70) AND ("meetings"."position" >= 3) AND ("meetings"."position" < 5)[0m
+  [1m[35m (30.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (1.2ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 4], ["updated_at", "2020-05-22 01:31:49.304371"], ["id", 60]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 4)[0m
+  [1m[36mMeeting Update All (1.2ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-22 01:31:49.318869' WHERE (1 = 1) AND ("meetings".id != 60) AND ("meetings"."position" >= 4) AND ("meetings"."position" < 6)[0m
+  [1m[35m (27.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 5], ["updated_at", "2020-05-22 01:31:49.349949"], ["id", 71]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 5)[0m
+  [1m[35m (21.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 6], ["updated_at", "2020-05-22 01:31:49.374441"], ["id", 69]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 6)[0m
+  [1m[36mMeeting Update All (0.2ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-22 01:31:49.377567' WHERE (1 = 1) AND ("meetings".id != 69) AND ("meetings"."position" >= 6) AND ("meetings"."position" < 8)[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 7], ["updated_at", "2020-05-22 01:31:49.410186"], ["id", 47]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 7)[0m
+  [1m[35m (22.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/schedulers/show-delivers?start_date=2020-05-20" for ::1 at 2020-05-21 22:31:52 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Parameters: {"start_date"=>"2020-05-20"}
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 89.6ms | Allocations: 1082853)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 292.0ms | Allocations: 3359467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 6.6ms | Allocations: 99825)
+Completed 200 OK in 781ms (Views: 756.2ms | ActiveRecord: 2.8ms | Allocations: 8891484)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:31:53 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:31:55 -0300
