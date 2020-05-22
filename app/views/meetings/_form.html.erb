@@ -103,7 +103,7 @@ inputCep.addEventListener('blur', function() {
       }
   }).then(function (data) {
     document.querySelector('#meeting_localization').value = data.response.logradouro;
-    document.querySelector('#meeting_district').value = data.response.bairro + '-' + data.response.localidade + '/' + data.response.uf ;
+    document.querySelector('#meeting_district').value = data.response.bairro + ' - ' + data.response.localidade + '/' + data.response.uf ;
   }).catch(function (err) {
       return console.log(err);
   });
