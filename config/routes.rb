@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :meetings do
     member do
       patch :move
+      put :start_time
     end
   end
   

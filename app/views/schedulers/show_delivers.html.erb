@@ -23,9 +23,41 @@
         <td><%= meeting.payment_type %></td>
         <td><%= meeting.total_price %></td>
         <td><%= meeting.information %></td>
-        <td><%= meeting.start_time.strftime("%H:%M") %></td>
+        <td id='start'><%= meeting.start_time.strftime("%H:%M") %></td>
       </tr>
     </tbody>
     <% end %>
   </table>
 <% end %>
+
+<script type="text/javascript">
+  let date_time = document.querySelectorAll('#start');
+
+  date_time.forEach(function(time, index) {
+    time.addEventListener('click', function() {
+      time.contentEditable = true
+    });
+
+    time.addEventListener('blur', function(event) {
+      
+      fetch('/meetings/' + time.closest('tbody').dataset.id + '/start_time', {
+        method: 'put',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({start_time: time.innerText})
+      }).then(function (res) {
+          if (res.ok) {
+              return res.json();
+          }
+      }).then(function (data) {
+        console.log('OK');
+      }).catch(function (err) {
+          return console.log(err);
+      });
+      })
+  })
+
+</script>

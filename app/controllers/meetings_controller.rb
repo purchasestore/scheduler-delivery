@@ -104,6 +104,17 @@ class MeetingsController < ApplicationController
   def move
     @meeting.insert_at(params[:position].to_i)
     head :ok
+  end  
+
+  def start_time
+    @meeting = Meeting.find(params[:id])
+    if @meeting != nil?
+      @meeting.update(start_time: DateTime.parse("#{@meeting.start_time.strftime("%Y-%m-%d")} #{params[:start_time]}"))
+      flash[:sucess] = "Salvo com sucesso!"
+    else
+      flash[:alert] = "Erro, tente novamente"
+    end
+    head :ok
   end
 
   private
