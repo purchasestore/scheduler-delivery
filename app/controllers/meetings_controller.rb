@@ -1,3 +1,5 @@
+require 'via_cep'
+
 class MeetingsController < ApplicationController
   before_action :set_meeting, only: [:show, :edit, :update, 
                                      :destroy, :move]
@@ -78,8 +80,12 @@ class MeetingsController < ApplicationController
       flash[:alert] = "Erro, tente novamente"
     end
     head :ok
-  end  
+  end
 
+  def cep
+    @address = ViaCep::Address.new(params[:number])
+    render json: @address
+  end 
 
   def duplicate
     @meeting = Meeting.find(params[:id])
@@ -88,7 +94,7 @@ class MeetingsController < ApplicationController
       if @meeting != nil?
         meeting_clone = @meeting.dup
         meeting_clone.save
-        format.html { redirect_to meetings_path, notice: 'Cópia Agendamento feita com sucesso.' }
+        format.html { redirect_to meetings_path, notice: 'Cópia Agendamento feito com sucesso.' }
       else
         flash[:alert] = "Erro, tente novamente"
       end
@@ -109,6 +115,7 @@ class MeetingsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def meeting_params
       params.require(:meeting).permit(:name, :localization, :phone, :start_time, :products, :total_price, 
-                                      :payment_type, :information, :district, :message_sent, :package_ready)
+                                      :payment_type, :information, :district, :message_sent, :package_ready,
+                                      :cep)
     end
 end

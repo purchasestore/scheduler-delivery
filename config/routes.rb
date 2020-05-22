@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     end
   end
   
+  get '/cep/:number', to: 'meetings#cep', as: 'meeting_cep'
   post '/meetings/:id/toggle', to: 'meetings#toggle', as: 'toggle'
   post '/schedulers/:id/toggle_scheduler', to: 'schedulers#toggle_scheduler', as: 'toggle_scheduler'
   get '/meetings/:id/duplicate', to: 'meetings#duplicate', as: 'meeting_duplicate'
