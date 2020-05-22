@@ -33833,3 +33833,265 @@ Completed 200 OK in 74ms (Views: 68.4ms | ActiveRecord: 1.4ms | Allocations: 400
 
 Started GET "/manifest.json" for ::1 at 2020-05-22 12:11:56 -0300
 Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:11:58 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:20:11 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 3.5ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 11.2ms | Allocations: 5554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 330)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 1.7ms | Allocations: 29710)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:20:12 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:20:13 -0300
+Started GET "/schedulers/show" for ::1 at 2020-05-22 12:22:36 -0300
+Processing by SchedulersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schedulers/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 21.5ms | Allocations: 13276)
+  Rendered schedulers/show.html.erb within layouts/application (Duration: 29.5ms | Allocations: 17013)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 330)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.9ms | Allocations: 41692)
+
+
+Started GET "/schedulers/show" for ::1 at 2020-05-22 12:22:38 -0300
+Processing by SchedulersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schedulers/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 15.1ms | Allocations: 12828)
+  Rendered schedulers/show.html.erb within layouts/application (Duration: 20.4ms | Allocations: 15804)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.8ms | Allocations: 38697)
+
+
+Started GET "/schedulers/show" for ::1 at 2020-05-22 12:22:40 -0300
+Processing by SchedulersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schedulers/show.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 25.6ms | Allocations: 12824)
+  Rendered schedulers/show.html.erb within layouts/application (Duration: 31.5ms | Allocations: 15800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.7ms | Allocations: 38690)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:22:40 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 9.1ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 17.9ms | Allocations: 5385)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 123)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 1.7ms | Allocations: 27885)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:22:42 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 1.8ms | Allocations: 1395)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 7.4ms | Allocations: 4343)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.7ms | Allocations: 26689)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:22:43 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:22:44 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:23:11 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.3ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 6.9ms | Allocations: 5384)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 330)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.7ms | Allocations: 29518)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:23:11 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:23:13 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:24:09 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 3.3ms | Allocations: 1875)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 17.4ms | Allocations: 5385)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 331)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.9ms | Allocations: 29520)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:24:09 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:24:11 -0300
+Started PUT "/meetings/57/start_time" for ::1 at 2020-05-22 12:24:48 -0300
+Processing by MeetingsController#start_time as JSON
+  Parameters: {"start_time"=>"15:01", "id"=>"57", "meeting"=>{"start_time"=>"15:01"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:110:in `start_time'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:112:in `start_time'
+  [1m[36mMeeting Update (0.9ms)[0m  [1m[33mUPDATE "meetings" SET "start_time" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["start_time", "2020-05-22 15:01:00"], ["updated_at", "2020-05-22 15:24:48.750242"], ["id", 57]]
+  ↳ app/controllers/meetings_controller.rb:112:in `start_time'
+  [1m[35m (22.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:112:in `start_time'
+Completed 200 OK in 41ms (ActiveRecord: 24.8ms | Allocations: 4755)
+
+
+Started GET "/users/edit" for ::1 at 2020-05-22 12:24:48 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 11.7ms | Allocations: 220)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 81.5ms | Allocations: 3926)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 125)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 0.2ms | Allocations: 28399)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:24:58 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 1.9ms | Allocations: 1403)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.7ms | Allocations: 26709)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:25:33 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 3.3ms | Allocations: 1873)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 330)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 1.0ms | Allocations: 29525)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:25:33 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:25:35 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:25:58 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.0ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5383)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 330)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.8ms | Allocations: 29513)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:25:59 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:26:00 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:26:54 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.3ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 6.9ms | Allocations: 5384)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 330)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.8ms | Allocations: 29521)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:26:54 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:26:56 -0300
+Started DELETE "/users/sign_out" for ::1 at 2020-05-22 12:27:04 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fWyi3TyUT3QfqwD4uw9vZnE77ZCYGUaUHhWleLdQ3WUl4LdrzfGukHikkji/MOODnQP8/cPWMNIZtDvzpZi+Vg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:27:04 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 3.6ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 13.1ms | Allocations: 5652)
+Redirected to http://localhost:3000/
+Completed 302 Found in 182ms (ActiveRecord: 0.5ms | Allocations: 14679)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 330)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 1.7ms | Allocations: 31070)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:27:04 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:27:05 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:27:06 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:27:17 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.4ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 6.7ms | Allocations: 5382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 330)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.9ms | Allocations: 29510)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:27:18 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:27:19 -0300
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-22 12:27:30 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.3ms | Allocations: 1872)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 7.5ms | Allocations: 5383)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 330)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.8ms | Allocations: 29523)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-22 12:27:30 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-22 12:27:32 -0300

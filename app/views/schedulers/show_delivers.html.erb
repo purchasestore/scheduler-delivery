@@ -3,24 +3,18 @@
   <table data-controller="drag" data-drag-url="/meetings/:id/move" class="table table-striped table-responsive">
     <thead>
       <th>Cliente</th>
-      <th>Endereço</th>
-      <th>Bairro</th>
-      <th>Celular</th>
+      <th>Endereço/Bairro</th>
       <th>Tipo Pagamento</th>
       <th>Valor Total</th>
-      <th>Informações</th>
       <th>Horário</th>
     </thead>
     <% meetings.sort_by {|m| m.position }.each do |meeting| %>
     <tbody data-id="<%= meeting.id %>">
       <tr>
-        <td><%= meeting.name %></td>
-        <td><%= meeting.localization %></td>
-        <td><%= meeting.district %></td>
-        <td><%= meeting.phone %></td>
+        <td><b>Nome:</b><%= meeting.name %> - <b>Fone:</b> <%= meeting.phone %></td>
+        <td><b>Local:</b><%= meeting.localization %> - <b>Bairro:</b> <%= meeting.district %></td>
         <td><%= meeting.payment_type %></td>
         <td><%= meeting.total_price %></td>
-        <td><%= meeting.information %></td>
         <td id='start'><%= meeting.start_time.strftime("%H:%M") %></td>
       </tr>
     </tbody>
