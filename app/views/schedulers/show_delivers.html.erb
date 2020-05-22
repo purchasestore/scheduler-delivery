@@ -4,7 +4,6 @@
     <thead>
       <th>Cliente</th>
       <th>Endereço</th>
-      <th>CEP</th>
       <th>Bairro</th>
       <th>Celular</th>
       <th>Tipo Pagamento</th>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= meeting.name %></td>
         <td><%= meeting.localization %></td>
-        <td><%= meeting.cep %></td>
         <td><%= meeting.district %></td>
         <td><%= meeting.phone %></td>
         <td><%= meeting.payment_type %></td>
@@ -48,13 +46,10 @@
           'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
         },
         body: JSON.stringify({start_time: time.innerText})
-      }).then(function (res) {
-          if (res.ok) {
-              return res.json();
-          }
       }).then(function (data) {
         console.log('OK');
       }).catch(function (err) {
+          alert('Horário inserido incorretamente')
           return console.log(err);
       });
       })
