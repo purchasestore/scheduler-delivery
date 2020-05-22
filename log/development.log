@@ -31362,3 +31362,195 @@ Processing by MeetingsController#cep as */*
 Completed 200 OK in 544ms (Views: 4.7ms | ActiveRecord: 1.9ms | Allocations: 915446)
 
 
+Started GET "/" for ::1 at 2020-05-21 21:55:41 -0300
+Processing by SchedulersController#show as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schedulers/show.html.erb within layouts/application
+  [1m[36mMeeting Load (2.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 978.1ms | Allocations: 8955390)
+  Rendered schedulers/show.html.erb within layouts/application (Duration: 1244.0ms | Allocations: 11405984)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 16.7ms | Allocations: 132873)
+Completed 200 OK in 1977ms (Views: 1868.1ms | ActiveRecord: 5.7ms | Allocations: 17500364)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 21:55:43 -0300
+Started GET "/" for ::1 at 2020-05-21 22:00:07 -0300
+Processing by SchedulersController#show as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schedulers/show.html.erb within layouts/application
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 834.0ms | Allocations: 8703124)
+  Rendered schedulers/show.html.erb within layouts/application (Duration: 1054.2ms | Allocations: 10995622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 37.0ms | Allocations: 98018)
+Completed 200 OK in 1663ms (Views: 1584.6ms | ActiveRecord: 3.0ms | Allocations: 16650194)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:00:09 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:00:11 -0300
+Started GET "/meetings" for ::1 at 2020-05-21 22:00:13 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:23
+  Rendered meetings/index.html.erb within layouts/application (Duration: 2057.9ms | Allocations: 27021060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 7.5ms | Allocations: 99833)
+Completed 200 OK in 2539ms (Views: 2489.0ms | ActiveRecord: 2.2ms | Allocations: 32840822)
+
+
+Started GET "/meetings/new" for ::1 at 2020-05-21 22:00:17 -0300
+Processing by MeetingsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 128.8ms | Allocations: 1800379)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 140.3ms | Allocations: 1991857)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 6.4ms | Allocations: 99831)
+Completed 200 OK in 555ms (Views: 502.8ms | ActiveRecord: 1.2ms | Allocations: 7680296)
+
+
+Started GET "/cep/91030470" for ::1 at 2020-05-21 22:00:23 -0300
+Processing by MeetingsController#cep as */*
+  Parameters: {"number"=>"91030470"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 771ms (Views: 15.2ms | ActiveRecord: 1.7ms | Allocations: 921736)
+
+
+Started GET "/meetings" for ::1 at 2020-05-21 22:04:03 -0300
+Processing by MeetingsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:23
+Started GET "/meetings/43/edit" for ::1 at 2020-05-21 22:04:06 -0300
+  Rendered meetings/index.html.erb within layouts/application (Duration: 2749.9ms | Allocations: 27196287)
+Processing by MeetingsController#edit as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (5.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  Rendering meetings/edit.html.erb within layouts/application
+  Rendered meetings/_form_edit.html.erb (Duration: 128.9ms | Allocations: 1903786)
+  Rendered meetings/edit.html.erb within layouts/application (Duration: 146.4ms | Allocations: 2083791)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 10.8ms | Allocations: 132874)
+Completed 200 OK in 4181ms (Views: 4126.4ms | ActiveRecord: 3.2ms | Allocations: 42143292)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 6.1ms | Allocations: 99825)
+Completed 200 OK in 910ms (Views: 700.6ms | ActiveRecord: 42.4ms | Allocations: 10092924)
+
+
+Started GET "/meetings/43/edit" for ::1 at 2020-05-21 22:05:19 -0300
+Processing by MeetingsController#edit as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (6.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  Rendering meetings/edit.html.erb within layouts/application
+  Rendered meetings/_form_edit.html.erb (Duration: 154.1ms | Allocations: 1852681)
+  Rendered meetings/edit.html.erb within layouts/application (Duration: 174.2ms | Allocations: 2027446)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 10.1ms | Allocations: 132873)
+Completed 200 OK in 698ms (Views: 605.0ms | ActiveRecord: 9.1ms | Allocations: 8249566)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:05:20 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:05:22 -0300
+Started GET "/meetings/43/edit" for ::1 at 2020-05-21 22:05:29 -0300
+Processing by MeetingsController#edit as */*
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  Rendering meetings/edit.html.erb within layouts/application
+  Rendered meetings/_form_edit.html.erb (Duration: 318.6ms | Allocations: 1733408)
+  Rendered meetings/edit.html.erb within layouts/application (Duration: 358.4ms | Allocations: 1884425)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 5.4ms | Allocations: 99825)
+Completed 200 OK in 825ms (Views: 708.9ms | ActiveRecord: 4.3ms | Allocations: 7835805)
+
+
+Started GET "/meetings/43/edit" for ::1 at 2020-05-21 22:05:36 -0300
+Processing by MeetingsController#edit as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (2.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  Rendering meetings/edit.html.erb within layouts/application
+  Rendered meetings/_form_edit.html.erb (Duration: 171.2ms | Allocations: 1734268)
+  Rendered meetings/edit.html.erb within layouts/application (Duration: 180.0ms | Allocations: 1854785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 6.9ms | Allocations: 99825)
+Completed 200 OK in 706ms (Views: 614.4ms | ActiveRecord: 3.7ms | Allocations: 7731950)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:05:37 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:05:39 -0300
+Started GET "/users/edit" for ::1 at 2020-05-21 22:05:56 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 24.4ms | Allocations: 43466)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 183.9ms | Allocations: 1085622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 9.9ms | Allocations: 132873)
+Completed 200 OK in 794ms (Views: 734.6ms | ActiveRecord: 2.3ms | Allocations: 7277314)
+
+
+Started GET "/users/edit" for ::1 at 2020-05-21 22:05:57 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 11697)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 75.3ms | Allocations: 806197)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 16.5ms | Allocations: 99825)
+Completed 200 OK in 615ms (Views: 538.8ms | ActiveRecord: 7.9ms | Allocations: 6521527)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:05:59 -0300
+Started GET "/meetings/43/edit" for ::1 at 2020-05-21 22:05:59 -0300
+Processing by MeetingsController#edit as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  Rendering meetings/edit.html.erb within layouts/application
+  Rendered meetings/_form_edit.html.erb (Duration: 183.8ms | Allocations: 1855415)
+  Rendered meetings/edit.html.erb within layouts/application (Duration: 211.0ms | Allocations: 2030181)
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:06:00 -0300
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 7.7ms | Allocations: 99832)
+Completed 200 OK in 992ms (Views: 889.8ms | ActiveRecord: 2.7ms | Allocations: 9737837)
+
+
+Started GET "/meetings/43/edit" for ::1 at 2020-05-21 22:06:03 -0300
+Processing by MeetingsController#edit as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `set_meeting'
+  Rendering meetings/edit.html.erb within layouts/application
+  Rendered meetings/_form_edit.html.erb (Duration: 139.6ms | Allocations: 1733403)
+  Rendered meetings/edit.html.erb within layouts/application (Duration: 146.9ms | Allocations: 1853920)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 5.9ms | Allocations: 99825)
+Completed 200 OK in 621ms (Views: 548.9ms | ActiveRecord: 2.7ms | Allocations: 7728498)
+
+
+Started GET "/manifest.json" for ::1 at 2020-05-21 22:06:04 -0300
+Started GET "/serviceworker.js" for ::1 at 2020-05-21 22:06:06 -0300
+Started GET "/cep/91030470" for ::1 at 2020-05-21 22:06:08 -0300
+Processing by MeetingsController#cep as */*
+  Parameters: {"number"=>"91030470"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 681ms (Views: 9.1ms | ActiveRecord: 1.4ms | Allocations: 913403)
+
+
