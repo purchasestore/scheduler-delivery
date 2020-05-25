@@ -14,7 +14,8 @@ import Rails from "@rails/ujs"
 export default class extends Controller {
   connect() {
     this.sortable = Sortable.create(this.element, {
-      onEnd: this.end.bind(this)
+      handle: '.handle',
+      onEnd: this.end.bind(this),
     })
   }
 
