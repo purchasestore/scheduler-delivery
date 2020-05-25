@@ -11,7 +11,7 @@
     <% meetings.sort_by {|m| m.position }.each do |meeting| %>
     <tbody data-id="<%= meeting.id %>">
       <tr>
-        <td><%= fa_stacked_icon "motorcycle inverse", base: "circle", class: "fa-1x handle" %></i><b>Nome:</b><%= meeting.name %> - <b>Fone:</b> <%= meeting.phone %></td>
+        <td><%= fa_stacked_icon "motorcycle inverse", base: "circle", class: "fa-2x handle" %></i><b>Nome:</b><%= meeting.name %> - <b>Fone:</b> <%= meeting.phone %></td>
         <td><b>Local:</b><%= meeting.localization %> - <b>Bairro:</b> <%= meeting.district %></td>
         <td><%= meeting.payment_type %></td>
         <td><%= meeting.total_price %></td>
