@@ -39102,3 +39102,115 @@ Processing by SchedulersController#show_delivers as HTML
 Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 1.5ms | Allocations: 31416)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+This autoloaded constant has been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/matheuspuppe/Área de Trabalho/github/scheduler-delivery/config/environment.rb:5)
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-26 14:12:35 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 126.9ms | Allocations: 93106)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 151.4ms | Allocations: 110059)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 957ms (Views: 947.3ms | ActiveRecord: 4.0ms | Allocations: 1688612)
+
+
+Started PATCH "/meetings/124/move" for ::1 at 2020-05-26 14:12:37 -0300
+Processing by MeetingsController#move as */*
+  Parameters: {"position"=>"2", "id"=>"124"}
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:125:in `set_meeting'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[37mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[35m (25.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+Completed 200 OK in 35ms (ActiveRecord: 26.9ms | Allocations: 4091)
+
+
+Started PATCH "/meetings/124/move" for ::1 at 2020-05-26 14:12:38 -0300
+Processing by MeetingsController#move as */*
+  Parameters: {"position"=>"1", "id"=>"124"}
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:125:in `set_meeting'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[37mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" IS NOT NULL) ORDER BY "meetings"."position" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[36mMeeting Update (0.4ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 83], ["updated_at", "2020-05-26 17:12:38.633691"], ["id", 124]]
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 83)[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[36mMeeting Update All (0.7ms)[0m  [1m[33mUPDATE "meetings" SET "position" = ("meetings"."position" + 1), "updated_at" = '2020-05-26 17:12:38.642175' WHERE (1 = 1) AND ("meetings".id != 124) AND ("meetings"."position" >= 1) AND ("meetings"."position" < 2)[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[36mMeeting Update (0.6ms)[0m  [1m[33mUPDATE "meetings" SET "position" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["position", 1], ["updated_at", "2020-05-26 17:12:38.644705"], ["id", 124]]
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "meetings" WHERE (1 = 1) AND ("meetings"."position" = 1)[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+  [1m[35m (26.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:107:in `move'
+Completed 200 OK in 63ms (ActiveRecord: 34.8ms | Allocations: 9595)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-26 14:12:39 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (1.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 5.0ms | Allocations: 3503)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 21.3ms | Allocations: 7055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 1.7ms | Allocations: 31969)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-26 14:12:41 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 2.6ms | Allocations: 3494)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 7.4ms | Allocations: 7046)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.7ms | Allocations: 31959)
+
+
+Started PUT "/meetings/124/start_time" for ::1 at 2020-05-26 14:12:43 -0300
+Processing by MeetingsController#start_time as JSON
+  Parameters: {"start_time"=>"16:11", "id"=>"124", "meeting"=>{"start_time"=>"16:11"}}
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:112:in `start_time'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetings_controller.rb:114:in `start_time'
+  [1m[36mMeeting Update (0.3ms)[0m  [1m[33mUPDATE "meetings" SET "start_time" = $1, "updated_at" = $2 WHERE "meetings"."id" = $3[0m  [["start_time", "2020-05-26 16:11:00"], ["updated_at", "2020-05-26 17:12:43.985394"], ["id", 124]]
+  ↳ app/controllers/meetings_controller.rb:114:in `start_time'
+  [1m[35m (29.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetings_controller.rb:114:in `start_time'
+Completed 200 OK in 37ms (ActiveRecord: 30.1ms | Allocations: 3311)
+
+
+Started GET "/schedulers/show-delivers" for ::1 at 2020-05-26 14:12:45 -0300
+Processing by SchedulersController#show_delivers as HTML
+  Rendering schedulers/show_delivers.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/schedulers/show_delivers.html.erb:1
+  Rendered simple_calendar/_calendar.html.erb (Duration: 3.0ms | Allocations: 3493)
+  Rendered schedulers/show_delivers.html.erb within layouts/application (Duration: 8.6ms | Allocations: 7037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.7ms | Allocations: 31963)
+
+

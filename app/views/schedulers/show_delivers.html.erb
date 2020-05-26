@@ -7,7 +7,6 @@
       <th>Tipo Pagamento</th>
       <th>Valor Total</th>
       <th>Horário</th>
-      <th>posição</th>
     </thead>
     <% meetings.sort_by {|m| m.position }.each do |meeting| %>
     <tbody data-id="<%= meeting.id %>">
@@ -17,7 +16,6 @@
         <td><%= meeting.payment_type %></td>
         <td><%= meeting.total_price %></td>
         <td id='start'><%= meeting.start_time.strftime("%H:%M") %></td>
-        <td><%= meeting.position %></td>
       </tr>
     </tbody>
     <% end %>
