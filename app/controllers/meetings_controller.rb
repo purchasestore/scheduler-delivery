@@ -1,6 +1,8 @@
 require 'via_cep'
 
 class MeetingsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:move, :cep]
+
   before_action :set_meeting, only: [:show, :edit, :update, 
                                      :destroy, :move]
 
